@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>MyPortfolio</title>
+    <title>My Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <div class="navbar">
-        <a href="#">Link1</a>
-        <a href="#">Link2</a>
-        <a href="#">Link3</a>
-        <a href="#">Link4</a>
+        <a href="aboutme">About Me</a>
+        <a href="#">Portfolio</a>
+        <a href="#">CV</a>
+        <a href="contactme">Contact Me</a>
     </div>
 
     <div class="header">
@@ -27,10 +27,20 @@
 
     <div class="row">
         <div class="side">
-            <h2>About Me</h2>
+            <h2 id="aboutme">About Me</h2>
             <h5>Photo of me:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+            <img id="photome" src="afbeeldingen/foto van mezelf.jpg" alt="Foto van mezelf">
+            <p id="bio">
+                Ik ben een student die Industrieel Ingenieur Industrieel Ontwerpen aan de universiteit Gent campus
+                Kortrijk studeert. Ik hou van creatief bezig te zijn, maar ook van voetbal, reizen en nieuwe dingen
+                leren. Neem gerust contact op of bekijk mijn eerdere werk in mijn portfolio.
+            </p>
+            <a href="CV.pdf" download="CV.pdf">
+                <button class="cv">
+                    <i class="fa fa-download">Download CV</i>
+                </button>
+            </a>
             <h3>More Text</h3>
             <p>Lorem ipsum dolor sit ame.</p>
             <div class="fakeimg" style="height:60px;">Image</div><br>
@@ -57,7 +67,19 @@
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
+        <h2 id="contactme">Contact Me</h2>
+        <p id="email">
+            Email: <a href="elinerootje@gmail.com">elinerootje@gmail.com</a>
+        </p>
+        <p id="discord">
+            Discord: elinederoo#4780
+        </p>
+        <p id="facebook">
+            Facebook: <a href="https://www.facebook.com/ElineDeRoo/">Eline De Roo</a>
+        </p>
+        <p id="instagram">
+            Instagram: <a href="https://www.instagram.com/derooeline/">@derooeline</a>
+        </p>
     </div>
 
 </body>
