@@ -32,18 +32,17 @@ body {
 
 /* Style the navigation bar links */
 .navbar a {
-  float: right;
+  float: left;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-
 }
 
 /*Right-aligned link */
 .navbar a.right {
-  float: right;
+  float: ri;
 }
 
 /* Change color on hover */
@@ -123,17 +122,73 @@ h3 {
   padding: 20px;
 }
 
-/* heading h2 */
+/* footer tekst */
 .footer {
   padding: 20px;
-  text-align: center;
+  text-align: left;
   background: #ddd;
 }
 
-/* Footer */
+/* Footer p */
 .footer>p {
   text-align: left;
   background: #ddd;
+}
+
+.footer>h2 {
+  text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* verzend knop */
+.verzenden {
+  border: thin solid gainsboro;
+  display: inline-block;
+  padding: 12px 24px;
+  color: black;
+  background-color: #f1f1f1;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* reset knop */
+.reset {
+  border: thin solid gainsboro;
+  display: inline-block;
+  padding: 12px 24px;
+  color: black;
+  background-color: #f1f1f1;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
