@@ -11,13 +11,22 @@
 
 <body>
 
-    <div class="navbar">
+    <!-- <div class="navbar">
         <a href="aboutme">About Me</a>
         <a href="#">Portfolio</a>
-        <a href="#">CV</a>
+        <a href="#">...</a>
         <a href="contactme">Contact Me</a>
-    </div>
+    </div> -->
 
+    <!-- Navigatiebar -->
+    <div class="navbar" id="myNavbar">
+        <div class="navbar">
+            <a href="home" class="bar-button" style="width:25%"><i class="fa fa-home"></i>HOME</a>
+            <a href="aboutme" class="bar-button" style="width:25%"><i class="fa fa-user"></i>ABOUT</a>
+            <a href="portfolio" class="bar-button" style="width:25%"><i class="fa fa-briefcase"></i>PORTFOLIO</a>
+            <a href="contactme" class="bar-button" style="width:25%"><i class="fa fa-envelope"></i>CONTACT</a>
+        </div>
+    </div>
     <div class="header">
         <h1>My Website</h1>
         <p>A website created by me.</p>
@@ -68,18 +77,49 @@
 
     <div class="footer">
         <h2 id="contactme">Contact Me</h2>
-        <p id="email">
-            Email: <a href="elinerootje@gmail.com">elinerootje@gmail.com</a>
+        <div class="gegevens">
+            <p>
+                <i class="fa fa-map-marker"></i>
+                Ursel, België
+            </p>
+            <p>
+                <i class="fa fa-phone"></i>
+                +32 483 00 62 39
+            </p>
+            <p>
+                <i class="fa fa-envelope"></i>
+                Email: elinerootje@gmail.com
+            </p>
+        </div>
+        <p>
+            Laten we contact opnemen. Stuur mij een bericht:
         </p>
-        <p id="discord">
-            Discord: elinederoo#4780
-        </p>
-        <p id="facebook">
-            Facebook: <a href="https://www.facebook.com/ElineDeRoo/">Eline De Roo</a>
-        </p>
-        <p id="instagram">
-            Instagram: <a href="https://www.instagram.com/derooeline/">@derooeline</a>
-        </p>
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="vnaam">Voornaam</label>
+                <input type="text" id="vnaam" name="voornaam" placeholder="Jouw naam.." required>
+
+                <label for="fnaam">Familienaam</label>
+                <input type="text" id="fnaam" name="familienaam" placeholder="Jouw familienaam.." required>
+
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" placeholder="Schrijf iets.." style="height:200px"
+                    required></textarea>
+
+                <button class="reset" type="reset"><i class="fa fa-refresh"></i>Reset</button>
+                <button class="verzenden" type="submit"><i class="fa fa-paper-plane"></i>Verzenden</button>
+
+            </form>
+        </div>
+        <div class=" iconen">
+            <a href="https://www.instagram.com/derooeline/"><i class="fa fa-instagram"></i></a>
+            <i class="fa fa-envelope"></i>
+            <a href="https://www.facebook.com/ElineDeRoo/"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-snapchat"></i></a>
+        </div>
+
+
     </div>
 
 </body>
