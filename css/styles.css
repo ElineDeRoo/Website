@@ -172,17 +172,7 @@ textarea {
   border-radius: 4px;
 }
 
-/* reset knop */
-.reset {
-  border: thin solid gainsboro;
-  display: inline-block;
-  padding: 12px 24px;
-  color: black;
-  background-color: #f1f1f1;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 4px;
-}
+
 
 /* Add a background color and some padding around the form */
 .container {
