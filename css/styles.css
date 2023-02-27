@@ -48,6 +48,15 @@ h1 {
   margin-left: 50px;
 }
 
+/* .sidebar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+} */
+
 .openbtn {
   font-size: 20px;
   cursor: pointer;
