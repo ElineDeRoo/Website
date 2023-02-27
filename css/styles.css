@@ -112,6 +112,11 @@ h1 {
   background-color: grey;
 }
 
+#list-btn,
+#grid-btn {
+  display: inline;
+}
+
 .column-grid {
   float: left;
   width: 50%;
@@ -167,6 +172,7 @@ h1 {
 .portfolio-tekst {
   letter-spacing: 10px;
   font-size: 36px;
+  display: block;
 }
 
 #contactme {
