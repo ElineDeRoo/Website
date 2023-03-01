@@ -13,7 +13,6 @@
     <div class="header">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <!-- <input type="text" placeholder="Zoek.."> -->
             <a href="#home">Home</a>
             <a href="#aboutme">About</a>
             <a href="#portfolio">Portfolio</a>
@@ -22,10 +21,15 @@
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <h1 id="home">Eline De Roo</h1>
+        <div class="bg-titel">
+            <img src="afbeeldingen/chicago_skyline2.jpg" class="bg-img">
+            <div class="display">
+                <span id="home" class="titel">Eline De Roo</span>
+            </div>
+        </div>
         <div class="row">
             <div class="side">
-                <span class="about">About Me</span>
+                <span id="aboutme" class="about">About Me</span>
                 <img id="photome" src="afbeeldingen/foto van mezelf.jpg" alt="Foto van mezelf">
                 <div class="tekst-about">
                     <p id="bio">
