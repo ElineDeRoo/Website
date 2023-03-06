@@ -9,6 +9,7 @@
     <script src="javascript_navbar.js"></script>
     <script src="javascript_portfolio.js"></script>
     <script src="javascript_gallerij.js"></script>
+    <script src="javascript_slideshow.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -35,10 +36,33 @@
         <div class="row">
             <div class="column graphic">
                 <div class="content">
-                    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="afbeeldingen/portfolio/mockup1.jpg" alt="mockup1" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="afbeeldingen/portfolio/mockup2.jpg" alt="mockup2" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="afbeeldingen/portfolio/mockup3.jpg" alt="mockup3" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <h3>Ontwerpdossier</h3>
+                    <p>Voor het vak Graphic Design hadden we de opdracht gekregen om een ontwerpdossier te maken over
+                        een product en hiervan moest je ook drie mockup's maken.</p>
                 </div>
             </div>
             <div class="column graphic">
@@ -60,26 +84,108 @@
 
             <div class="column visual">
                 <div class="content">
-                    <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="render1" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="render2" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="render3" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="render4" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <h3>Render opdracht</h3>
+                    <p>...</p>
                 </div>
             </div>
             <div class="column visual">
                 <div class="content">
-                    <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg" alt="cornell1"
+                                style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg" alt="cornell2"
+                                style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg" alt="cornell3"
+                                style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <h3>Cornell box</h3>
+                    <p>...</p>
                 </div>
             </div>
             <div class="column visual">
                 <div class="content">
-                    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="foto1" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg" alt="foto2"
+                                style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG" alt="foto3"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg" alt="foto4"
+                                style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <h3>Foto opdracht</h3>
+                    <p>...</p>
                 </div>
             </div>
 
