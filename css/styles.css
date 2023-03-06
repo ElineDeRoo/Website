@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -130,7 +134,6 @@ body {
   border-radius: 30%;
 }
 
-/* download cv */
 .cv {
   background-color: gainsboro;
   border: none;
@@ -141,7 +144,6 @@ body {
   display: block;
 }
 
-/* Darker background on mouse-over */
 .cv:hover {
   background-color: grey;
 }
@@ -163,13 +165,8 @@ body {
   clear: both;
 }
 
-/* Column container */
 .row {
-  display: -ms-flexbox;
-  /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
   flex-wrap: wrap;
 }
 

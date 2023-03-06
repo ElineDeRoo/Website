@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="javascript_navbar.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -15,16 +16,16 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#home">Home</a>
             <a href="#aboutme">Over mij</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="portfolio.html">Portfolio</a>
             <a href="#contactme">Contact</a>
         </div>
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <div class="bg-titel">
+        <div id="home" class="bg-titel">
             <img src="afbeeldingen/spoor2.png" class="bg-img">
             <div class="display">
-                <span id="home" class="titel">Eline De Roo</span>
+                <span class="titel">Eline De Roo</span>
             </div>
         </div>
         <div class="row">
@@ -62,107 +63,58 @@
                 </div>
             </div>
         </div>
-        <div id="portfolio" class="portfolio">
-            <span class="portfolio-tekst">Portfolio</span>
-            <button onclick="listView()" id="list-btn"><i class="fa fa-bars"></i> List</button>
-            <button onclick="gridView()" id="grid-btn"><i class="fa fa-th-large"></i> Grid</button>
-            <div class="row-grid">
-                <div class="column-grid" style="background-color: darkslategrey;">
-                    <h2>Column 1</h2>
-                    <p>Some text..</p>
-                </div>
-                <div class="column-grid" style="background-color: slategrey;">
-                    <h2>Column 2</h2>
-                    <p>Some text..</p>
-                </div>
+    </div>
+    <div class="container">
+        <h2 id="contactme">Contact</h2>
+        <p id="tekst">
+            Laten we contact opnemen. Stuur mij een bericht:
+        </p>
+        <div class="row">
+            <div class="gegevens">
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    Ursel, België
+                </p>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    Tel.: +32 483 00 62 39
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    Email: elinerootje@gmail.com
+                </p>
+                <img id="ursel" src="afbeeldingen/ursel.jpg" alt="ursel">
             </div>
-            <div class="row-grid">
-                <div class="column-grid" style="background-color:silver;">
-                    <h2>Column 3</h2>
-                    <p>Some text..</p>
-                </div>
-                <div class="column-grid" style="background-color:gainsboro;">
-                    <h2>Column 4</h2>
-                    <p>Some text..</p>
-                </div>
+            <div class="col">
+                <form action="mailto:eline.deroo@ugent.be" method="post">
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" name="naam" placeholder="Jouw naam.." required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Jouw email.." required>
+
+                    <label for="onderwerp">Onderwerp</label>
+                    <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp.." required>
+
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" placeholder="Schrijf iets.." style="height:200px"
+                        required></textarea>
+
+                    <input type="submit" value="Verzenden">
+                </form>
             </div>
-            <script>
-                var elements = document.getElementsByClassName("column-grid");
-                var i;
-                function listView() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.width = "100%";
-                    }
-                }
-                function gridView() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.width = "50%";
-                    }
-                }
-            </script>
-        </div>
-        <div class="container">
-            <h2 id="contactme">Contact</h2>
-            <p id="tekst">
-                Laten we contact opnemen. Stuur mij een bericht:
-            </p>
-            <div class="row">
-                <div class="gegevens">
-                    <p>
-                        <i class="fa fa-map-marker"></i>
-                        Ursel, België
-                    </p>
-                    <p>
-                        <i class="fa fa-phone"></i>
-                        Tel.: +32 483 00 62 39
-                    </p>
-                    <p>
-                        <i class="fa fa-envelope"></i>
-                        Email: elinerootje@gmail.com
-                    </p>
-                    <img id="ursel" src="afbeeldingen/ursel.jpg" alt="ursel">
-                </div>
-                <div class="col">
-                    <form action="mailto:eline.deroo@ugent.be" method="post">
-                        <label for="naam">Naam</label>
-                        <input type="text" id="naam" name="naam" placeholder="Jouw naam.." required>
-
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Jouw email.." required>
-
-                        <label for="onderwerp">Onderwerp</label>
-                        <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp.." required>
-
-                        <label for="bericht">Bericht</label>
-                        <textarea id="bericht" name="bericht" placeholder="Schrijf iets.." style="height:200px"
-                            required></textarea>
-
-                        <input type="submit" value="Verzenden">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="iconen">
-                <a href="https://www.instagram.com/derooeline/"><i class="fa fa-instagram hover-opacity"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100010358413751"><i
-                        class="fa fa-facebook-official hover-opacity"></i></a>
-                <a href="..."><i class="fa fa-snapchat hover-opacity"></i></a>
-            </div>
-            <p>Powered by Eline De Roo</p>
         </div>
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "200px";
-            document.getElementById("main").style.marginLeft = "200px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
+    <div class="footer">
+        <div class="iconen">
+            <a href="https://www.instagram.com/derooeline/"><i class="fa fa-instagram hover-opacity"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100010358413751"><i
+                    class="fa fa-facebook-official hover-opacity"></i></a>
+            <a href="..."><i class="fa fa-snapchat hover-opacity"></i></a>
+        </div>
+        <p>Powered by Eline De Roo</p>
+    </div>
+    </div>
 </body>
 
 </html>
