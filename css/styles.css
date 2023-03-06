@@ -56,7 +56,6 @@ body {
   border-radius: 5px;
 }
 
-
 .openbtn:hover {
   background-color: transparent;
 }
@@ -96,7 +95,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.titel {
+.naam {
   letter-spacing: 10px;
   color: white;
   font-size: 36px;
@@ -107,28 +106,28 @@ body {
 }
 
 #voetbal {
-  height: 200px;
+  height: 180px;
   float: left;
   padding: 20px;
   border-radius: 30%;
 }
 
 #wereldkaart {
-  height: 200px;
+  height: 180px;
   display: inline-block;
   padding: 20px;
   border-radius: 30%;
 }
 
 #cookies {
-  height: 200px;
+  height: 180px;
   display: inline-block;
   padding: 20px;
   border-radius: 30%;
 }
 
 #VR {
-  height: 200px;
+  height: 180px;
   display: inline-block;
   padding: 20px;
   border-radius: 30%;
@@ -146,23 +145,6 @@ body {
 
 .cv:hover {
   background-color: grey;
-}
-
-#list-btn,
-#grid-btn {
-  display: inline;
-}
-
-.column-grid {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.row-grid:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .row {
@@ -188,21 +170,8 @@ body {
 }
 
 .about {
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   font-size: 36px;
-}
-
-.portfolio {
-  background-color: #9e9e9e;
-  color: white;
-  text-align: center;
-  padding: 20x;
-}
-
-.portfolio-tekst {
-  letter-spacing: 10px;
-  font-size: 36px;
-  display: block;
 }
 
 #contactme {

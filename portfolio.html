@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style_portfolio.css">
     <script src="javascript_navbar.js"></script>
     <script src="javascript_portfolio.js"></script>
+    <script src="javascript_gallerij.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -23,65 +24,140 @@
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <div id="portfolio" class="portfolio">
-            <span class="portfolio-tekst">Portfolio</span>
-            <button onclick="listView()" id="list-btn"><i class="fa fa-bars"></i> List</button>
-            <button onclick="gridView()" id="grid-btn"><i class="fa fa-th-large"></i> Grid</button>
-            <div class="row-grid">
-                <div class="column-grid">
-                    <div class="container-grid">
-                        <a href="https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp"><img
-                                src="afbeeldingen/rode panda.jpg" alt="test" class="test-image"></a>
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Graphic Design</h2>
-                                Some text..
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column-grid">
-                    <div class="container-grid">
-                        <a href="https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp"><img
-                                src="afbeeldingen/rode panda.jpg" alt="test" class="test-image"></a>
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Ingenieursproject</h2>
-                                Some text..
-                            </div>
-                        </div>
-                    </div>
+        <h1>PORTFOLIO</h1>
+        <hr>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('alles')"> Alles</button>
+            <button class="btn" onclick="filterSelection('graphic')"> Graphic Design</button>
+            <button class="btn" onclick="filterSelection('visual')"> Visualisatie Technieken</button>
+            <button class="btn" onclick="filterSelection('eigen')"> Eigen projecten</button>
+        </div>
+        <div class="row">
+            <div class="column graphic">
+                <div class="content">
+                    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                 </div>
             </div>
-            <div class="row-grid">
-                <div class="column-grid">
-                    <div class="container-grid">
-                        <a href="https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp"><img
-                                src="afbeeldingen/rode panda.jpg" alt="test" class="test-image"></a>
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Visualisatie Technieken</h2>
-                                Some text..
-                            </div>
-                        </div>
-                    </div>
+            <div class="column graphic">
+                <div class="content">
+                    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                 </div>
-                <div class="column-grid">
-                    <div class="container-grid">
-                        <a href="https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp"><img
-                                src="afbeeldingen/rode panda.jpg" alt="test" class="test-image"></a>
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Eigen projecten</h2>
-                                Some text..
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="column graphic">
+                <div class="content">
+                    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                 </div>
-                <!-- https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp -->
-                <!-- https://themes.getbootstrap.com/preview/?theme_id=60718 -->
+            </div>
+
+            <div class="column visual">
+                <div class="content">
+                    <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column visual">
+                <div class="content">
+                    <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column visual">
+                <div class="content">
+                    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+
+            <div class="column eigen">
+                <div class="content">
+                    <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column eigen">
+                <div class="content">
+                    <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column eigen">
+                <div class="content">
+                    <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
+                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
             </div>
         </div>
+    </div>
+    <script>
+        filterSelection("alles") // Execute the function and show all columns
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "alles") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
