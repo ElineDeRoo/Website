@@ -119,10 +119,14 @@ h1 {
     color: white;
 }
 
-.slideshow-container {
+.slideshow {
     max-width: 1000px;
     position: relative;
     margin: auto;
+}
+
+img {
+    vertical-align: middle;
 }
 
 .mySlides {
@@ -193,6 +197,48 @@ h1 {
         opacity: 1
     }
 }
+
+/* .slideshow {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: flex;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+} */
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
