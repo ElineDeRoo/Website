@@ -129,7 +129,11 @@ img {
     vertical-align: middle;
 }
 
-.mySlides {
+.mySlides,
+.mySlides2,
+.mySlides3,
+.mySlides4,
+.mySlides5 {
     display: none;
 }
 
@@ -167,7 +171,7 @@ img {
     top: 0;
 }
 
-.dot {
+/* .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -181,7 +185,7 @@ img {
 .active,
 .dot:hover {
     background-color: #717171;
-}
+} */
 
 .fade {
     animation-name: fade;
