@@ -34,10 +34,108 @@ h2 {
 .content {
     background-color: white;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.content:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .show {
     display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+/* css test slideshow */
+.gallerij {
+    position: relative;
+}
+
+.slides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: gray;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-gallerij {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row-thumbnail:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-thumbnail {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -51,5 +149,9 @@ h2 {
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
+    }
+
+    .btn {
+        margin: 5px;
     }
 }

@@ -30,6 +30,7 @@
         <div id="home" class="bg-titel">
             <img src="afbeeldingen/spoor2.png" class="bg-img">
             <div class="display">
+                <!-- <span class="naam">Hallo, ik ben Eline De Roo</span> -->
                 <span class="naam">Eline De Roo</span>
             </div>
             <!--Idee: meerdere achtergrondfoto's die iets dynamisch kunnen doen-->
@@ -48,18 +49,17 @@
                         voetballen, bakken en reizen. Mijn interesses zijn het maken van websites en apps maar AI en VR
                         vind ik ook heel interessant. Sommige creatieve dingen kan ik ook interessant vinden zoals
                         3D-geprintte dingen enz. Ik ben ook een hele grote dierenliefhebber en zelf heb ik ook veel
-                        huisdieren: een kat Snoetie, een hond Charlie, 2 kippen,
-                        kleine visvijver met veel vissen en heb ook nog konijnen en kanaries gehad. Ik wou eigenlijk al
-                        van kleinsafaan voetballen maar mocht dit pas 5
-                        jaar geleden doen van mijn mama. Hiervoor heb ik wel andere sporten gedaan zoals 5 jaar
-                        volleybal, 2 à 3 jaar tennis en enkele maanden zwemmen. Enkele toffe reizen die ik al gemaakt
-                        heb met mijn familie: Chicago en Beaverdam met mijn meter om mijn nonkel te bezoeken; Sardinië,
-                        Malta, enz. met mijn ouders en mijn zus. De reizen met mijn ouders en mijn zus zijn niet op een
-                        plaats waar we al geweest zijn. Normaal ging ik ook al naar Zuid-Afrika geweest zijn maar dat
-                        jaar is Corona uitgebroken dus die reis is helaas niet doorgegaan. Dit jaar zouden we naar
-                        Thailand, Bali of naar de westkust van Noord-Amerika op reis gaan. Ik zou graag nog veel reizen
-                        naar verschillende landen om zo meer culturen en andere dingen te leren kennen. Neem gerust
-                        contact op of bekijk mijn eerdere werken.
+                        huisdieren: een kat Snoetie, een hond Charlie, 2 kippen, kleine visvijver met veel vissen en heb
+                        ook nog konijnen en kanaries gehad. Ik wou eigenlijk al van kleinsafaan voetballen maar mocht
+                        dit pas 5 jaar geleden doen van mijn moeder. Hiervoor heb ik wel andere sporten gedaan zoals 5
+                        jaar volleybal, 2 à 3 jaar tennis en enkele maanden zwemmen. Enkele toffe reizen die ik al
+                        gemaakt heb met mijn familie: Chicago en Beaverdam met mijn meter om mijn nonkel te bezoeken;
+                        Sardinië, Malta, enz. met mijn ouders en mijn zus. De reizen met mijn ouders en mijn zus zullen
+                        niet op dezelfde plaats zijn. Normaal ging ik ook al naar Zuid-Afrika geweest zijn maar dat jaar
+                        is Corona uitgebroken dus die reis is helaas niet doorgegaan. Dit jaar zouden we naar Bali op
+                        reis gaan en kijk er heel hard naar uit. Ik zou graag nog veel reizen naar verschillende
+                        landen om zo meer culturen en andere dingen te leren kennen. Neem gerust contact op of bekijk
+                        hieronder mijn eerdere werken.
                         <!--Idee: via blokjes tekst werken met per blokje een foto erbij-->
                         <!--Idee: tekst in 2 blokken doen zonder foto's-->
                     </p>
@@ -90,33 +90,102 @@
                 <button class="btn" onclick="filterSelection('eigen')"> Eigen projecten</button>
                 <button class="btn" onclick="filterSelection('les')"> Oefeningen Les</button>
             </div>
-            <hr>
             <!--Idee: ... -->
             <div class="row-portfolio">
                 <div class="column graphic">
                     <div class="content">
-                        <img src="afbeeldingen/portfolio/mockup1.jpg" alt="mockup1" style="width:100%">
-                        <img src="afbeeldingen/portfolio/mockup2.jpg" alt="mockup2" style="width:100%">
-                        <img src="afbeeldingen/portfolio/mockup3.jpg" alt="mockup3" style="width:100%">
+                        <div class="gallerij">
+                            <div class="slides">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="afbeeldingen/portfolio/mockup1.jpg" alt="Mockup 1" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="afbeeldingen/portfolio/mockup2.jpg" alt="Mockup 2" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="afbeeldingen/portfolio/mockup3.jpg" alt="Mockup 3" style="width:100%">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <div class="caption-gallerij">
+                                <p id="caption"></p>
+                            </div>
+                            <div class="row-thumbnail">
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/mockup1.jpg" style="width:100%"
+                                        onclick="currentSlide(1)" alt="Mockup 1">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/mockup2.jpg" style="width:100%"
+                                        onclick="currentSlide(2)" alt="Mockup 2">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/mockup3.jpg" style="width:100%"
+                                        onclick="currentSlide(3)" alt="Mockup 3">
+                                </div>
+                            </div>
+                        </div>
                         <h3>Ontwerpdossier</h3>
                         <p>Voor het vak Graphic Design hadden we de opdracht gekregen om een ontwerpdossier te maken
                             over een product en hiervan moest je ook drie mockup's maken.</p>
                     </div>
                 </div>
-                <div class="column ingenieur">
+                <!-- <div class="column ingenieur">
                     <div class="content">
                         <img src="afbeeldingen/rode panda.jpg" alt="ingenieur1" style="width:100%">
                         <h3>Ingenieursproject</h3>
                         <p>...</p>
                     </div>
-                </div>
-
+                </div> -->
                 <div class="column visual">
                     <div class="content">
-                        <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="render1" style="width:100%">
-                        <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="render2" style="width:100%">
-                        <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="render3" style="width:100%">
-                        <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="render4" style="width:100%">
+                        <div class="gallerij">
+                            <div class="slides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg"
+                                    alt="Render met deel in wireframe" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio"
+                                    style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail"
+                                    style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context"
+                                    style="width:100%">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <div class="caption-gallerij">
+                                <p id="caption"></p>
+                            </div>
+                            <div class="row-thumbnail">
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_wire.jpg"
+                                        style="width:100%" onclick="currentSlide(4)" alt="Render met deel in wireframe">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_studio.jpg"
+                                        style="width:100%" onclick="currentSlide(5)" alt="Render in fotostudio">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_detail.jpg"
+                                        style="width:100%" onclick="currentSlide(6)" alt="Render in detail">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_context.jpg"
+                                        style="width:100%" onclick="currentSlide(7)" alt="Render in context">
+                                </div>
+                            </div>
+                        </div>
                         <h3>Render opdracht</h3>
                         <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
                             we een render opdracht doen. De opdracht was dat je 4 renders moest maken: 1 render waarbij
@@ -126,11 +195,43 @@
                 </div>
                 <div class="column visual">
                     <div class="content">
-                        <img src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg" alt="cornell1" style="width:100%">
-                        <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg" alt="cornell2"
-                            style="width:100%">
-                        <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg" alt="cornell3"
-                            style="width:100%">
+                        <div class="gallerij">
+                            <div class="slides">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg" alt="Cornell box 1"
+                                    style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg" alt="Cornell box 2"
+                                    style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg" alt="Cornell box 3"
+                                    style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <div class="caption-gallerij">
+                                <p id="caption"></p>
+                            </div>
+                            <div class="row-thumbnail">
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg"
+                                        style="width:100%" onclick="currentSlide(8)" alt="Cornell box 1">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg"
+                                        style="width:100%" onclick="currentSlide(9)" alt="Cornell box 2">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg"
+                                        style="width:100%" onclick="currentSlide(10)" alt="Cornell box 3">
+                                </div>
+                            </div>
+                        </div>
                         <h3>Cornell box</h3>
                         <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
                             we een Cornell box maken. Binnen de Cornell box moet er 1 object met reflectie, 1 met
@@ -139,10 +240,53 @@
                 </div>
                 <div class="column visual">
                     <div class="content">
-                        <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="foto1" style="width:100%">
-                        <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg" alt="foto2" style="width:100%">
-                        <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG" alt="foto3" style="width:100%">
-                        <img src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg" alt="foto4" style="width:100%">
+                        <div class="gallerij">
+                            <div class="slides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG" alt="Foto in context"
+                                    style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="Foto in basic infini"
+                                    style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
+                                    alt="Foto met hand in basic infini" style="width:100%">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg" alt="Foto met lichtspoor"
+                                    style="width:100%">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <div class="caption-gallerij">
+                                <p id="caption"></p>
+                            </div>
+                            <div class="row-thumbnail">
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
+                                        style="width:100%" onclick="currentSlide(11)" alt="Foto in context">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg"
+                                        style="width:100%" onclick="currentSlide(12)" alt="Foto in basic infini">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
+                                        style="width:100%" onclick="currentSlide(13)"
+                                        alt="Foto met hand in basic infini">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg"
+                                        style="width:100%" onclick="currentSlide(14)" alt="Foto met lichtspoor">
+                                </div>
+                            </div>
+                        </div>
                         <h3>Foto opdracht</h3>
                         <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
                             we een foto opdracht doen. De opdracht was dat je 4 foto's moest trekken: 1 foto met een
@@ -152,8 +296,31 @@
                 </div>
                 <div class="column eigen">
                     <div class="content">
-                        <img src="afbeeldingen/naam1.jpg" alt="eigen1" style="width:100%">
-                        <img src="afbeeldingen/naam2.jpg" alt="eigen2" style="width:100%">
+                        <div class="gallerij">
+                            <div class="slides">
+                                <div class="numbertext">1 / 2</div>
+                                <img src="afbeeldingen/naam1.jpg" alt="Naam vooraanzicht" style="width:100%">
+                            </div>
+                            <div class="slides">
+                                <div class="numbertext">2 / 2</div>
+                                <img src="afbeeldingen/naam2.jpg" alt="Naam schuin aanzicht" style="width:100%">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <div class="caption-gallerij">
+                                <p id="caption"></p>
+                            </div>
+                            <div class="row-thumbnail">
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/naam1.jpg" style="width:100%"
+                                        onclick="currentSlide(15)" alt="Naam vooraanzicht">
+                                </div>
+                                <div class="column-thumbnail">
+                                    <img class="demo cursor" src="afbeeldingen/naam2.jpg" style="width:100%"
+                                        onclick="currentSlide(16)" alt="Naam schuin aanzicht">
+                                </div>
+                            </div>
+                        </div>
                         <h3>Mijn naam in kalksteen gekerft</h3>
                         <p>Dit heb ik samen met mijn meter gedaan. Mijn meter is iemand die zich veel bezig
                             houdt met kunst met stenen.</p>

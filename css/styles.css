@@ -71,18 +71,19 @@ body {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 400px;
+  height: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
+  text-align: center;
 }
 
 .bg-img {
   background-image: url('/afbeeldingen/spoor2.png');
-  width: 100%;
-  height: 400px;
+  width: auto;
+  height: 800px;
   object-fit: cover;
   vertical-align: bottom;
   opacity: 0.5;
@@ -103,6 +104,7 @@ body {
   background-color: #292828;
   animation: opac 0.8s;
   border-radius: 5px;
+  display: block;
 }
 
 #voetbal {
@@ -201,9 +203,9 @@ body {
 form {
   max-width: 600px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 180px;
+  display: block;
+  /* flex-wrap: wrap; */
+  float: right;
 }
 
 form label {
