@@ -139,17 +139,21 @@ body {
 }
 
 .cv {
-  background-color: gainsboro;
+  background-color: white;
   border: none;
   color: black;
   padding: 12px;
   cursor: pointer;
   font-size: 20px;
   display: block;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
 }
 
 .cv:hover {
-  background-color: grey;
+  background-color: #ddd;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .row {
@@ -163,15 +167,20 @@ body {
   color: white;
 }
 
-#photome {
-  height: 500px;
-  padding-right: 20px;
+.container-foto {
   float: left;
+  padding: 0 80px 0 0;
+}
+
+#photome {
+  height: 650px;
   border-radius: 25%;
 }
 
-#bio {
-  padding: 10px;
+.bio {
+  padding-right: 300px;
+  margin: 20px;
+  font-size: 18px;
 }
 
 .about {

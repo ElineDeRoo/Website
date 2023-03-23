@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Eline De Roo</title>
+    <title>Portfoliowebsite</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
@@ -17,6 +17,7 @@
 
 <body>
     <div class="header">
+        <!-- Navigatiebalk vast zetten op laptopscherm, via menuknop gsmscherm -->
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#home">Home</a>
@@ -38,30 +39,46 @@
         </div>
         <div class="row">
             <div class="side">
-                <span id="aboutme" class="about">Over mij</span>
-                <img id="photome" src="afbeeldingen/foto van mezelf.jpg" alt="Foto van mezelf">
+                <span id="aboutme" class="about"><b>Wie ben ik?</b></span>
+                <div class="container-foto">
+                    <img id="photome" src="afbeeldingen/foto van mezelf.jpg" alt="Foto van mezelf">
+                </div>
                 <div class="tekst-about">
-                    <p id="bio">
+                    <p class="bio school">
                         Ik ben Eline De Roo en ben 19 jaar. Ik ben een student die Industrieel Ingenieur Industrieel
                         Ontwerpen aan de universiteit Gent campus Kortrijk studeert. Vooraleer ik studeerde aan de
                         universiteit heb ik eerst twee jaar moderne wetenschappen in Zomergem gevolgd. Hierna heb ik
-                        vier jaar Industriële wetenschappen in Sint-Denijs-Westrem gevolgd. Mijn hobby’s zijn
-                        voetballen, bakken en reizen. Mijn interesses zijn het maken van websites en apps maar AI en VR
-                        vind ik ook heel interessant. Sommige creatieve dingen kan ik ook interessant vinden zoals
-                        3D-geprintte dingen enz. Ik ben ook een hele grote dierenliefhebber en zelf heb ik ook veel
-                        huisdieren: een kat Snoetie, een hond Charlie, 2 kippen, kleine visvijver met veel vissen en heb
-                        ook nog konijnen en kanaries gehad. Ik wou eigenlijk al van kleinsafaan voetballen maar mocht
-                        dit pas 5 jaar geleden doen van mijn moeder. Hiervoor heb ik wel andere sporten gedaan zoals 5
-                        jaar volleybal, 2 à 3 jaar tennis en enkele maanden zwemmen. Enkele toffe reizen die ik al
-                        gemaakt heb met mijn familie: Chicago en Beaverdam met mijn meter om mijn nonkel te bezoeken;
-                        Sardinië, Malta, enz. met mijn ouders en mijn zus. De reizen met mijn ouders en mijn zus zullen
-                        niet op dezelfde plaats zijn. Normaal ging ik ook al naar Zuid-Afrika geweest zijn maar dat jaar
-                        is Corona uitgebroken dus die reis is helaas niet doorgegaan. Dit jaar zouden we naar Bali op
-                        reis gaan en kijk er heel hard naar uit. Ik zou graag nog veel reizen naar verschillende
-                        landen om zo meer culturen en andere dingen te leren kennen. Neem gerust contact op of bekijk
-                        hieronder mijn eerdere werken.
+                        vier jaar Industriële wetenschappen in Sint-Denijs-Westrem gevolgd.
+                        <!-- foto school (logo of icoon) -->
+                    </p>
+                    <p class="bio interesse">
+                        Mijn hobby’s zijn voetballen, bakken en reizen. Mijn interesses zijn het maken van websites en
+                        apps maar AI en VR vind ik ook heel interessant. Sommige creatieve dingen kan ik ook interessant
+                        vinden zoals 3D-geprintte dingen enz. Ik ben een hele grote dierenliefhebber en zelf heb ik
+                        ook veel huisdieren: een kat: <i>Snoetie</i>, een hond: <i>Charlie</i>, 2 kippen, kleine
+                        visvijver met veel vissen en heb ook nog konijnen en kanaries gehad.
+                        <!-- <img src="afbeeldingen/VR quest.jpg" alt="VR-quest" id="VR"> -->
+                        <!-- foto charlie, 3D printer, Snoetie, ... -->
+                    </p>
+                    <p class="bio sport">
+                        Ik ben ook sportief, wou eigenlijk al van kleinsafaan voetballen maar mocht dit pas 5 jaar
+                        geleden doen van mijn moeder. Hiervoor heb ik wel andere sporten gedaan zoals 5 jaar volleybal,
+                        2 à 3 jaar tennis en enkele maanden zwemmen.
+                        <!-- <img src="afbeeldingen/voetbal.jpg" alt="voetbal" id="voetbal"> -->
+                        <!-- foto andere sport -->
+                    </p>
+                    <p class="bio reis">
+                        Mijn droom is om zo veel mogelijk landen van de wereld te bezoeken. Enkele toffe
+                        reizen die ik al gemaakt heb met mijn familie: Chicago en Beaverdam met mijn meter om mijn
+                        nonkel te bezoeken; Sardinië, Malta, enz. met mijn ouders en mijn zus. De reizen met mijn ouders
+                        en mijn zus zullen niet op dezelfde plaats zijn. Normaal ging ik ook al naar Zuid-Afrika geweest
+                        zijn maar dat jaar is Corona uitgebroken dus die reis is helaas niet doorgegaan. Dit jaar zouden
+                        we naar Bali op reis gaan en kijk er heel hard naar uit. Ik zou graag nog veel reizen naar
+                        verschillende landen om zo meer culturen en andere dingen te leren kennen. Neem gerust contact
+                        op of bekijk hieronder mijn eerdere werken.
+                        <!-- <img src="afbeeldingen/wereldkaart.jpg" alt="wereldkaart" id="wereldkaart"> -->
                         <!--Idee: via blokjes tekst werken met per blokje een foto erbij-->
-                        <!--Idee: tekst in 2 blokken doen zonder foto's-->
+                        <!--Idee: naast foto van mij tekst in blokjes en naast elk blokje 1 foto (rechts)-->
                     </p>
                     <a href="CV.pdf" download="CV.pdf">
                         <button class="cv">
@@ -70,10 +87,6 @@
                             </i>
                         </button>
                     </a>
-                    <img src="afbeeldingen/voetbal.jpg" alt="voetbal" id="voetbal">
-                    <img src="afbeeldingen/wereldkaart.jpg" alt="wereldkaart" id="wereldkaart">
-                    <img src="afbeeldingen/cookies.jpg" alt="cookies" id="cookies">
-                    <img src="afbeeldingen/VR quest.jpg" alt="VR-quest" id="VR">
                 </div>
             </div>
         </div>
@@ -243,17 +256,17 @@
                         <div class="gallerij">
                             <div class="slides">
                                 <div class="numbertext">1 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG" alt="Foto in context"
+                                <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="Foto in context"
                                     style="width:100%">
                             </div>
                             <div class="slides">
                                 <div class="numbertext">2 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="Foto in basic infini"
-                                    style="width:100%">
+                                <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
+                                    alt="Foto in basic infini" style="width:100%">
                             </div>
                             <div class="slides">
                                 <div class="numbertext">3 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
+                                <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
                                     alt="Foto met hand in basic infini" style="width:100%">
                             </div>
 
@@ -269,15 +282,15 @@
                             </div>
                             <div class="row-thumbnail">
                                 <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg"
                                         style="width:100%" onclick="currentSlide(11)" alt="Foto in context">
                                 </div>
                                 <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg"
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
                                         style="width:100%" onclick="currentSlide(12)" alt="Foto in basic infini">
                                 </div>
                                 <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
+                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
                                         style="width:100%" onclick="currentSlide(13)"
                                         alt="Foto met hand in basic infini">
                                 </div>
@@ -436,6 +449,7 @@
                     <img id="ursel" src="afbeeldingen/ursel.jpg" alt="ursel">
                 </div>
                 <div class="col">
+                    <!-- breder maken -->
                     <form action="mailto:eline.deroo@ugent.be" method="post">
                         <label for="naam">Naam</label>
                         <input type="text" id="naam" name="naam" placeholder="Jouw naam.." required>
@@ -460,9 +474,9 @@
                 <a href="https://www.instagram.com/derooeline/"><i class="fa fa-instagram hover-opacity"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100010358413751"><i
                         class="fa fa-facebook-official hover-opacity"></i></a>
-                <a href="..."><i class="fa fa-snapchat hover-opacity"></i></a>
+                <a href=""><i class="fa fa-snapchat hover-opacity"></i></a>
             </div>
-            <p>Powered by Eline De Roo</p>
+            <p> &#169; 2023 Eline De Roo</p>
         </div>
     </div>
 
