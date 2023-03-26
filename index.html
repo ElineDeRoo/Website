@@ -43,51 +43,52 @@
                 <div class="container-foto">
                     <img id="photome" src="afbeeldingen/foto van mezelf.jpg" alt="Foto van mezelf">
                 </div>
-                <div class="tekst-about">
-                    <p class="bio school">
+                <div class="bio">
+                    <!--Idee: naast foto van mij tekst in blokjes en naast elk blokje 1 foto (rechts)-->
+                    <p class="school">
                         Ik ben Eline De Roo en ben 19 jaar. Ik ben een student die Industrieel Ingenieur Industrieel
                         Ontwerpen aan de universiteit Gent campus Kortrijk studeert. Vooraleer ik studeerde aan de
                         universiteit heb ik eerst twee jaar moderne wetenschappen in Zomergem gevolgd. Hierna heb ik
                         vier jaar Industriële wetenschappen in Sint-Denijs-Westrem gevolgd.
-                        <!-- foto school (logo of icoon) -->
+                        <!-- foto school logo -->
                     </p>
-                    <p class="bio interesse">
+                    <p class="interesse">
                         Mijn hobby’s zijn voetballen, bakken en reizen. Mijn interesses zijn het maken van websites en
                         apps maar AI en VR vind ik ook heel interessant. Sommige creatieve dingen kan ik ook interessant
                         vinden zoals 3D-geprintte dingen enz. Ik ben een hele grote dierenliefhebber en zelf heb ik
                         ook veel huisdieren: een kat: <i>Snoetie</i>, een hond: <i>Charlie</i>, 2 kippen, kleine
                         visvijver met veel vissen en heb ook nog konijnen en kanaries gehad.
-                        <!-- <img src="afbeeldingen/VR quest.jpg" alt="VR-quest" id="VR"> -->
-                        <!-- foto charlie, 3D printer, Snoetie, ... -->
+                        <!-- foto Charlie, 3D printer, Snoetie, ... -->
                     </p>
-                    <p class="bio sport">
+                    <p class="sport">
                         Ik ben ook sportief, wou eigenlijk al van kleinsafaan voetballen maar mocht dit pas 5 jaar
                         geleden doen van mijn moeder. Hiervoor heb ik wel andere sporten gedaan zoals 5 jaar volleybal,
                         2 à 3 jaar tennis en enkele maanden zwemmen.
-                        <!-- <img src="afbeeldingen/voetbal.jpg" alt="voetbal" id="voetbal"> -->
                         <!-- foto andere sport -->
                     </p>
-                    <p class="bio reis">
+                    <p class="reis">
                         Mijn droom is om zo veel mogelijk landen van de wereld te bezoeken. Enkele toffe
                         reizen die ik al gemaakt heb met mijn familie: Chicago en Beaverdam met mijn meter om mijn
                         nonkel te bezoeken; Sardinië, Malta, enz. met mijn ouders en mijn zus. De reizen met mijn ouders
                         en mijn zus zullen niet op dezelfde plaats zijn. Normaal ging ik ook al naar Zuid-Afrika geweest
-                        zijn maar dat jaar is Corona uitgebroken dus die reis is helaas niet doorgegaan. Dit jaar zouden
-                        we naar Bali op reis gaan en kijk er heel hard naar uit. Ik zou graag nog veel reizen naar
-                        verschillende landen om zo meer culturen en andere dingen te leren kennen. Neem gerust contact
-                        op of bekijk hieronder mijn eerdere werken.
-                        <!-- <img src="afbeeldingen/wereldkaart.jpg" alt="wereldkaart" id="wereldkaart"> -->
-                        <!--Idee: via blokjes tekst werken met per blokje een foto erbij-->
-                        <!--Idee: naast foto van mij tekst in blokjes en naast elk blokje 1 foto (rechts)-->
+                        zijn maar dat jaar is Corona uitgebroken dus die reis is helaas niet doorgegaan. Ik zou graag
+                        nog veel reizen naar verschillende landen om zo meer culturen en andere dingen te leren kennen.
+                        Neem gerust contact op of bekijk hieronder mijn eerdere werken.
+                        <!-- foto wereldkaart, koffer, ... -->
                     </p>
-                    <a href="CV.pdf" download="CV.pdf">
-                        <button class="cv">
-                            <i class="fa fa-download">
-                                <p> Download CV</p>
-                            </i>
-                        </button>
-                    </a>
                 </div>
+                <div class="foto">
+                    <!-- Hoe krijg ik mijn foto's hoger en onder elkaar zodat ze naast mijn tekst komen te staan?-->
+                    <img src="afbeeldingen/voetbal.jpg" alt="voetbal" id="voetbal">
+                    <img src="afbeeldingen/wereldkaart.jpg" alt="wereldkaart" id="wereldkaart">
+                </div>
+                <a href="CV.pdf" download="CV.pdf">
+                    <button class="cv">
+                        <i class="fa fa-download">
+                            <p> Download CV</p>
+                        </i>
+                    </button>
+                </a>
             </div>
         </div>
         <div id="portfolio">
@@ -98,12 +99,12 @@
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('alles')"> Alles</button>
                 <button class="btn" onclick="filterSelection('graphic')"> Graphic Design</button>
-                <button class="btn" onclick="filterSelection('ingenieur')"> Ingenieursproject</button>
+                <!-- <button class="btn" onclick="filterSelection('ingenieur')"> Ingenieursproject</button> -->
                 <button class="btn" onclick="filterSelection('visual')"> Visualisatie Technieken</button>
                 <button class="btn" onclick="filterSelection('eigen')"> Eigen projecten</button>
                 <button class="btn" onclick="filterSelection('les')"> Oefeningen Les</button>
             </div>
-            <!--Idee: ... -->
+            <!--Hoe kan ik ervoor zorgen dat ik elke slideshow apart kan werken?-->
             <div class="row-portfolio">
                 <div class="column graphic">
                     <div class="content">
