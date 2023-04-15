@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style_portfolio.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="javascript_navbar.js"></script>
     <script src="javascript_portfolio.js"></script>
     <script src="javascript_gallerij.js"></script>
@@ -16,26 +18,30 @@
 </head>
 
 <body>
-    <div class="header">
-        <!-- Navigatiebalk vast zetten op laptopscherm, via menuknop gsmscherm -->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#home">Home</a>
-            <a href="#aboutme">Over mij</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contactme">Contact</a>
-        </div>
-    </div>
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <div id="home" class="bg-titel">
-            <img src="afbeeldingen/spoor2.png" class="bg-img">
-            <div class="display">
-                <span class="naam">Eline De Roo</span>
-            </div>
-            <!--Idee: meerdere achtergrondfoto's die iets dynamisch kunnen doen-->
-            <!--Idee: 'Hallo, ik ben Eline De Roo' laten animeren over de achtergrondfoto of foto's-->
-        </div>
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>Portfolio<br>Website</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#aboutme" onclick="w3_close()" class="w3-bar-item w3-button">OVER MIJ</a>
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#contactme" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Portfolio Website</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <div class="w3-main" style="margin-left:300px">
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
         <div class="row">
             <div class="side">
                 <span id="aboutme" class="about"><b>Wie ben ik?</b></span>
@@ -43,13 +49,11 @@
                     <img id="photome" src="afbeeldingen/foto van mezelf.jpg" alt="Foto van mezelf">
                 </div>
                 <div class="bio">
-                    <!--Idee: naast foto van mij tekst in blokjes en naast elk blokje 1 foto (rechts)-->
                     <p class="school">
                         Ik ben Eline De Roo en ben 19 jaar. Ik ben een student die Industrieel Ingenieur Industrieel
                         Ontwerpen aan de universiteit Gent campus Kortrijk studeert. Vooraleer ik studeerde aan de
                         universiteit heb ik eerst twee jaar moderne wetenschappen in Zomergem gevolgd. Hierna heb ik
                         vier jaar Industriële wetenschappen in Sint-Denijs-Westrem gevolgd.
-                        <!-- foto school logo -->
                     </p>
                     <p class="interesse">
                         Mijn hobby’s zijn voetballen, bakken en reizen. Mijn interesses zijn het maken van websites en
@@ -57,37 +61,29 @@
                         vinden zoals 3D-geprintte dingen enz. Ik ben een hele grote dierenliefhebber en zelf heb ik
                         ook veel huisdieren: een kat: <i>Snoetie</i>, een hond: <i>Charlie</i>, 2 kippen, kleine
                         visvijver met veel vissen en heb ook nog konijnen en kanaries gehad.
-                        <!-- foto Charlie, 3D printer, Snoetie, ... -->
                     </p>
                     <p class="sport">
                         Ik ben ook sportief, wou eigenlijk al van kleinsafaan voetballen maar mocht dit pas 5 jaar
                         geleden doen van mijn moeder. Hiervoor heb ik wel andere sporten gedaan zoals 5 jaar volleybal,
                         2 à 3 jaar tennis en enkele maanden zwemmen.
-                        <!-- foto andere sport -->
                     </p>
                     <p class="reis">
                         Mijn droom is om zo veel mogelijk landen van de wereld te bezoeken. Enkele toffe
                         reizen die ik al gemaakt heb met mijn familie: Chicago en Beaverdam met mijn meter om mijn
-                        nonkel te bezoeken; Sardinië, Malta, enz. met mijn ouders en mijn zus. De reizen met mijn ouders
-                        en mijn zus zullen niet op dezelfde plaats zijn. Normaal ging ik ook al naar Zuid-Afrika geweest
-                        zijn maar dat jaar is Corona uitgebroken dus die reis is helaas niet doorgegaan. Ik zou graag
-                        nog veel reizen naar verschillende landen om zo meer culturen en andere dingen te leren kennen.
-                        Neem gerust contact op of bekijk hieronder mijn eerdere werken.
-                        <!-- foto wereldkaart, koffer, ... -->
+                        nonkel te bezoeken; Sardinië, Malta, enz. met mijn ouders en mijn zus. Normaal ging ik ook al
+                        naar Zuid-Afrika geweest zijn maar dat jaar is Corona uitgebroken dus die reis is helaas niet
+                        doorgegaan. Ik zou graag nog veel reizen naar verschillende landen om zo meer culturen en andere
+                        dingen te leren kennen. Neem gerust contact op of bekijk hieronder mijn eerdere werken.
                     </p>
+                    <a href="CV.pdf" download="CV.pdf">
+                        <button class="cv">
+                            <i class="fa fa-download">
+                                <p> Download CV</p>
+                            </i>
+                        </button>
+                    </a>
                 </div>
-                <div class="foto">
-                    <!-- Hoe krijg ik mijn foto's hoger en onder elkaar zodat ze naast mijn tekst komen te staan?-->
-                    <img src="afbeeldingen/voetbal.jpg" alt="voetbal" id="voetbal">
-                    <img src="afbeeldingen/wereldkaart.jpg" alt="wereldkaart" id="wereldkaart">
-                </div>
-                <a href="CV.pdf" download="CV.pdf">
-                    <button class="cv">
-                        <i class="fa fa-download">
-                            <p> Download CV</p>
-                        </i>
-                    </button>
-                </a>
+
             </div>
         </div>
         <div id="portfolio">
@@ -95,337 +91,94 @@
             <p id="tekst">
                 Bekijk hier mijn eerdere werken:
             </p>
-            <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('alles')"> Alles</button>
-                <button class="btn" onclick="filterSelection('graphic')"> Graphic Design</button>
-                <!-- <button class="btn" onclick="filterSelection('ingenieur')"> Ingenieursproject</button> -->
-                <button class="btn" onclick="filterSelection('visual')"> Visualisatie Technieken</button>
-                <button class="btn" onclick="filterSelection('eigen')"> Eigen projecten</button>
-                <button class="btn" onclick="filterSelection('les')"> Oefeningen Les</button>
-            </div>
-            <!--Hoe kan ik ervoor zorgen dat ik elke slideshow apart kan werken?-->
             <div class="row-portfolio">
-                <div class="column graphic">
-                    <div class="content">
-                        <div class="gallerij">
-                            <div class="slides">
-                                <div class="numbertext">1 / 3</div>
-                                <img src="afbeeldingen/portfolio/mockup1.jpg" alt="Mockup 1" style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">2 / 3</div>
-                                <img src="afbeeldingen/portfolio/mockup2.jpg" alt="Mockup 2" style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">3 / 3</div>
-                                <img src="afbeeldingen/portfolio/mockup3.jpg" alt="Mockup 3" style="width:100%">
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <div class="caption-gallerij">
-                                <p id="caption"></p>
-                            </div>
-                            <div class="row-thumbnail">
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/mockup1.jpg" style="width:100%"
-                                        onclick="currentSlide(1)" alt="Mockup 1">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/mockup2.jpg" style="width:100%"
-                                        onclick="currentSlide(2)" alt="Mockup 2">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/mockup3.jpg" style="width:100%"
-                                        onclick="currentSlide(3)" alt="Mockup 3">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Ontwerpdossier</h3>
-                        <p>Voor het vak Graphic Design hadden we de opdracht gekregen om een ontwerpdossier te maken
-                            over een product en hiervan moest je ook drie mockup's maken.</p>
+                <div class="content">
+                    <div class="gallerij">
+                        <img src="afbeeldingen/portfolio/mockup1.jpg" alt="Mockup 1" style="width:10%">
+                        <img src="afbeeldingen/portfolio/mockup2.jpg" alt="Mockup 2" style="width:10%">
+                        <img src="afbeeldingen/portfolio/mockup3.jpg" alt="Mockup 3" style="width:10%">
                     </div>
+                    <h3>Ontwerpdossier</h3>
+                    <p>Voor het vak Graphic Design hadden we de opdracht gekregen om een ontwerpdossier te maken
+                        over een product en hiervan moest je ook drie mockup's maken.</p>
                 </div>
-                <!-- <div class="column ingenieur">
-                    <div class="content">
-                        <img src="afbeeldingen/rode panda.jpg" alt="ingenieur1" style="width:100%">
-                        <h3>Ingenieursproject</h3>
-                        <p>...</p>
-                    </div>
-                </div> -->
-                <div class="column visual">
-                    <div class="content">
-                        <div class="gallerij">
-                            <div class="slides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg"
-                                    alt="Render met deel in wireframe" style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio"
-                                    style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail"
-                                    style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context"
-                                    style="width:100%">
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <div class="caption-gallerij">
-                                <p id="caption"></p>
-                            </div>
-                            <div class="row-thumbnail">
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_wire.jpg"
-                                        style="width:100%" onclick="currentSlide(4)" alt="Render met deel in wireframe">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_studio.jpg"
-                                        style="width:100%" onclick="currentSlide(5)" alt="Render in fotostudio">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_detail.jpg"
-                                        style="width:100%" onclick="currentSlide(6)" alt="Render in detail">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_context.jpg"
-                                        style="width:100%" onclick="currentSlide(7)" alt="Render in context">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Render opdracht</h3>
-                        <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
-                            we een render opdracht doen. De opdracht was dat je 4 renders moest maken: 1 render waarbij
-                            product in context, 1 render waarbij product in detail zodat je verschillende materialen
-                            ziet, 1 render in een studio en 1 render die een wireframe heeft.</p>
-                    </div>
-                </div>
-                <div class="column visual">
-                    <div class="content">
-                        <div class="gallerij">
-                            <div class="slides">
-                                <div class="numbertext">1 / 3</div>
-                                <img src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg" alt="Cornell box 1"
-                                    style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">2 / 3</div>
-                                <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg" alt="Cornell box 2"
-                                    style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">3 / 3</div>
-                                <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg" alt="Cornell box 3"
-                                    style="width:100%">
-                            </div>
 
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <div class="caption-gallerij">
-                                <p id="caption"></p>
-                            </div>
-                            <div class="row-thumbnail">
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg"
-                                        style="width:100%" onclick="currentSlide(8)" alt="Cornell box 1">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg"
-                                        style="width:100%" onclick="currentSlide(9)" alt="Cornell box 2">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg"
-                                        style="width:100%" onclick="currentSlide(10)" alt="Cornell box 3">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Cornell box</h3>
-                        <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
-                            we een Cornell box maken. Binnen de Cornell box moet er 1 object met reflectie, 1 met
-                            refractie, minstens 1 met een bump map en 1 element met een projection map zijn.</p>
+                <div class="content">
+                    <div class="gallerij">
+                        <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="Render met deel in wireframe"
+                            style="width:10%">
+                        <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio"
+                            style="width:10%">
+                        <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail"
+                            style="width:10%">
+                        <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context"
+                            style="width:10%">
                     </div>
+                    <h3>Render opdracht</h3>
+                    <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
+                        we een render opdracht doen. De opdracht was dat je 4 renders moest maken: 1 render waarbij
+                        product in context, 1 render waarbij product in detail zodat je verschillende materialen
+                        ziet, 1 render in een studio en 1 render die een wireframe heeft.</p>
                 </div>
-                <div class="column visual">
-                    <div class="content">
-                        <div class="gallerij">
-                            <div class="slides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="Foto in context"
-                                    style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
-                                    alt="Foto in basic infini" style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
-                                    alt="Foto met hand in basic infini" style="width:100%">
-                            </div>
 
-                            <div class="slides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg" alt="Foto met lichtspoor"
-                                    style="width:100%">
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <div class="caption-gallerij">
-                                <p id="caption"></p>
-                            </div>
-                            <div class="row-thumbnail">
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg"
-                                        style="width:100%" onclick="currentSlide(11)" alt="Foto in context">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg"
-                                        style="width:100%" onclick="currentSlide(12)" alt="Foto in basic infini">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
-                                        style="width:100%" onclick="currentSlide(13)"
-                                        alt="Foto met hand in basic infini">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg"
-                                        style="width:100%" onclick="currentSlide(14)" alt="Foto met lichtspoor">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Foto opdracht</h3>
-                        <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
-                            we een foto opdracht doen. De opdracht was dat je 4 foto's moest trekken: 1 foto met een
-                            lichtspoor, 1 foto met een product in context en 2 foto's in een basic infini
-                            waarbij op 1 foto een relevant lichaamsdeel zichtbaar moest zijn.</p>
+                <div class="content">
+                    <div class="gallerij">
+                        <img src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg" alt="Cornell box 1"
+                            style="width:10%">
+                        <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg" alt="Cornell box 2"
+                            style="width:10%">
+                        <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg" alt="Cornell box 3"
+                            style="width:10%">
                     </div>
+                    <h3>Cornell box</h3>
+                    <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
+                        we een Cornell box maken. Binnen de Cornell box moet er 1 object met reflectie, 1 met
+                        refractie, minstens 1 met een bump map en 1 element met een projection map zijn.</p>
                 </div>
-                <div class="column eigen">
-                    <div class="content">
-                        <div class="gallerij">
-                            <div class="slides">
-                                <div class="numbertext">1 / 2</div>
-                                <img src="afbeeldingen/naam1.jpg" alt="Naam vooraanzicht" style="width:100%">
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">2 / 2</div>
-                                <img src="afbeeldingen/naam2.jpg" alt="Naam schuin aanzicht" style="width:100%">
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <div class="caption-gallerij">
-                                <p id="caption"></p>
-                            </div>
-                            <div class="row-thumbnail">
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/naam1.jpg" style="width:100%"
-                                        onclick="currentSlide(15)" alt="Naam vooraanzicht">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/naam2.jpg" style="width:100%"
-                                        onclick="currentSlide(16)" alt="Naam schuin aanzicht">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Mijn naam in kalksteen gekerft</h3>
-                        <p>Dit heb ik samen met mijn meter gedaan. Mijn meter is iemand die zich veel bezig
-                            houdt met kunst met stenen.</p>
+
+                <div class="content">
+                    <div class="gallerij">
+                        <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="Foto in context"
+                            style="width:10%">
+                        <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg" alt="Foto in basic infini"
+                            style="width:10%">
+                        <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
+                            alt="Foto met hand in basic infini" style="width:10%">
+                        <img src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg" alt="Foto met lichtspoor"
+                            style="width:10%">
                     </div>
+                    <h3>Foto opdracht</h3>
+                    <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
+                        we een foto opdracht doen. De opdracht was dat je 4 foto's moest trekken: 1 foto met een
+                        lichtspoor, 1 foto met een product in context en 2 foto's in een basic infini
+                        waarbij op 1 foto een relevant lichaamsdeel zichtbaar moest zijn.</p>
                 </div>
-                <div class="column les">
-                    <div class="content">
-                        <div class="gallerij">
-                            <div class="slides">
-                                <div class="numbertext">1 / 2</div>
-                                <a href="https://editor.p5js.org/ElineDeRoo/full/2r4RUifkc"><img
-                                        src="afbeeldingen/robothond.jpg" alt="robothond" style="width:100%"></a>
-                            </div>
-                            <div class="slides">
-                                <div class="numbertext">2 / 2</div>
-                                <a href="https://editor.p5js.org/ElineDeRoo/full/U2-njzGSV"><img src="..."
-                                        alt="robothond variabelen" style="width:100%"></a>
-                            </div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <div class="caption-gallerij">
-                                <p id="caption"></p>
-                            </div>
-                            <div class="row-thumbnail">
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="afbeeldingen/robothond.jpg" style="width:100%"
-                                        onclick="currentSlide(17)" alt="robothond">
-                                </div>
-                                <div class="column-thumbnail">
-                                    <img class="demo cursor" src="..." style="width:100%" onclick="currentSlide(18)"
-                                        alt="robothond variabelen">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Robot hond</h3>
-                        <p>Voor het vak opkomende technologieën moesten we een robot maken met behulp van
-                            p5javascript om daar dan later andere oefeningen mee te maken. Mijn robot is hond.
-                            De eerste oefening is gewoon een robot maken. De tweede oefening is dezelfde robot opnieuw
-                            te maken maar deze keer met variabelen.</p>
+
+                <div class="content">
+                    <div class="gallerij">
+                        <img src="afbeeldingen/naam1.jpg" alt="Naam vooraanzicht" style="width:10%">
+                        <img src="afbeeldingen/naam2.jpg" alt="Naam schuin aanzicht" style="width:10%">
                     </div>
+                    <h3>Mijn naam in kalksteen gekerft</h3>
+                    <p>Dit heb ik samen met mijn meter gedaan. Mijn meter is iemand die zich veel bezig
+                        houdt met kunst met stenen.</p>
+                </div>
+
+                <!-- plugin p5js editor -->
+                <div class="content">
+                    <div class="gallerij">
+                        <a href="https://editor.p5js.org/ElineDeRoo/full/2r4RUifkc"><img
+                                src="afbeeldingen/robothond.jpg" alt="robothond" style="width:10%"></a>
+                        <a href="https://editor.p5js.org/ElineDeRoo/full/U2-njzGSV"><img src="..."
+                                alt="robothond variabelen" style="width:10%"></a>
+                    </div>
+                    <h3>Robot hond</h3>
+                    <p>Voor het vak opkomende technologieën moesten we een robot maken met behulp van
+                        p5javascript om daar dan later andere oefeningen mee te maken. Mijn robot is hond.
+                    </p>
                 </div>
             </div>
         </div>
-        <script>
-            filterSelection("alles") // Execute the function and show all columns
-            function filterSelection(c) {
-                var x, i;
-                x = document.getElementsByClassName("column");
-                if (c == "alles") c = "";
-                // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-                for (i = 0; i < x.length; i++) {
-                    RemoveClass(x[i], "show");
-                    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-                }
-            }
-
-            // Show filtered elements
-            function AddClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    if (arr1.indexOf(arr2[i]) == -1) {
-                        element.className += " " + arr2[i];
-                    }
-                }
-            }
-
-            // Hide elements that are not selected
-            function RemoveClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    while (arr1.indexOf(arr2[i]) > -1) {
-                        arr1.splice(arr1.indexOf(arr2[i]), 1);
-                    }
-                }
-                element.className = arr1.join(" ");
-            }
-
-            // Add active class to the current button (highlight it)
-            var btnContainer = document.getElementById("myBtnContainer");
-            var btns = btnContainer.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("active");
-                    current[0].className = current[0].className.replace(" active", "");
-                    this.className += " active";
-                });
-            }
-        </script>
         <div class="container">
             <h2 id="contactme">Contact</h2>
             <p id="tekst">
@@ -449,7 +202,6 @@
                     <img id="ursel" src="afbeeldingen/ursel.jpg" alt="ursel">
                 </div>
                 <div class="col">
-                    <!-- breder maken -->
                     <form action="mailto:eline.deroo@ugent.be" method="post">
                         <label for="naam">Naam</label>
                         <input type="text" id="naam" name="naam" placeholder="Jouw naam.." required>
@@ -474,12 +226,30 @@
                 <a href="https://www.instagram.com/derooeline/"><i class="fa fa-instagram hover-opacity"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100010358413751"><i
                         class="fa fa-facebook-official hover-opacity"></i></a>
-                <a href=""><i class="fa fa-snapchat hover-opacity"></i></a>
             </div>
             <p> &#169; 2023 Eline De Roo</p>
         </div>
-    </div>
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
 
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+        </script>
+    </div>
 </body>
 
 </html>

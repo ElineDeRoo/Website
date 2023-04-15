@@ -11,103 +11,6 @@ body {
   margin: 0;
 }
 
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  background-color: black;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 30px;
-  cursor: pointer;
-  background-color: white;
-  opacity: 75%;
-  color: black;
-  padding: 10px 15px;
-  border: none;
-  z-index: 1;
-  position: fixed;
-  border: 3px black solid;
-  border-radius: 5px;
-}
-
-.openbtn:hover {
-  background-color: transparent;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-.bg-titel {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  height: 800px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: hidden;
-  text-align: center;
-}
-
-.bg-img {
-  background-image: url('/afbeeldingen/spoor2.png');
-  width: auto;
-  height: 800px;
-  object-fit: cover;
-  vertical-align: bottom;
-  opacity: 0.5;
-}
-
-.display {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.naam {
-  letter-spacing: 10px;
-  color: white;
-  font-size: 36px;
-  padding: 12px 24px;
-  background-color: #292828;
-  animation: opac 0.8s;
-  border-radius: 5px;
-  display: block;
-}
-
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +24,7 @@ body {
 
 .container-foto {
   float: left;
-  padding: 0 80px 0 0;
+  padding: 30px 50px 0 30px;
 }
 
 #photome {
@@ -130,33 +33,14 @@ body {
 }
 
 .bio {
-  padding-right: 300px;
+  padding-right: 50px;
   margin: 20px;
-  font-size: 16px;
-}
-
-.foto {
-  float: right;
-  padding: 0 80px 0 0;
+  font-size: 14px;
 }
 
 .about {
   letter-spacing: 6px;
-  font-size: 36px;
-}
-
-#voetbal {
-  height: 100px;
-}
-
-#wereldkaart {
-  height: 100px;
-}
-
-#VR {
-  height: 180px;
-  display: inline-block;
-  padding: 10px;
+  font-size: 32px;
 }
 
 .cv p {
@@ -190,8 +74,8 @@ body {
 }
 
 .gegevens p {
-  padding-left: 30%;
-  font-size: x-large;
+  padding-left: 25%;
+  font-size: large;
 }
 
 #ursel {
@@ -204,11 +88,9 @@ body {
 }
 
 form {
-  max-width: 600px;
   margin: 0 auto;
   display: block;
-  /* flex-wrap: wrap; */
-  float: right;
+  padding-left: 80px
 }
 
 form label {
@@ -224,10 +106,11 @@ form textarea {
   border-radius: 4px;
   border: 1px solid #ccc;
   margin-bottom: 16px;
-  width: 100%;
+  width: 500px;
 }
 
 form textarea {
+  width: 500px;
   height: 150px;
 }
 
@@ -251,10 +134,8 @@ form input[type="submit"]:hover {
 }
 
 .col {
-  float: right;
-  width: 50%;
+  width: 500px;
   margin-top: 6px;
-  padding: 20px;
 }
 
 .footer {
@@ -287,33 +168,12 @@ form input[type="submit"]:hover {
   content: "\f16d";
 }
 
-.fa-snapchat::before {
-  content: "\f2ab";
-}
-
 .hover-opacity:hover {
   opacity: 0.60;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
+@media screen and (max-width: 700px) {}
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-
-  .sidebar {
-    padding-top: 15px;
-  }
-
-  .sidebar a {
-    font-size: 18px;
-  }
-}
+@media screen and (max-width: 400px) {}
