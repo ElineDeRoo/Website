@@ -164,17 +164,43 @@
                         houdt met kunst met stenen.</p>
                 </div>
 
-                <!-- plugin p5js editor -->
                 <div class="content">
                     <div class="gallerij">
-                        <a href="https://editor.p5js.org/ElineDeRoo/full/2r4RUifkc"><img
-                                src="afbeeldingen/robothond.jpg" alt="robothond" style="width:10%"></a>
-                        <a href="https://editor.p5js.org/ElineDeRoo/full/U2-njzGSV"><img src="..."
-                                alt="robothond variabelen" style="width:10%"></a>
+                        <div class="navbarP5JS" id="myP5JSbar">
+                            <a href="javascript:void(0);" onclick="myP5JSFunction('2r4RUifkc')">Oefening 1</a>
+                            <a href="javascript:void(0);" onclick="myP5JSFunction('U2-njzGSV')">Oefening 2</a>
+                            <a href="javascript:void(0);" onclick="myP5JSFunction('jG_bFgVqB')">Oefening 3</a>
+                            <a href="javascript:void(0);" onclick="myP5JSFunction('...')">Oefening 4</a>
+                        </div>
+                        <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/2r4RUifkc" width="100%"
+                            height="600"></iframe>
+                        <!-- <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/U2-njzGSV" width="100%"
+                            height="600"></iframe>
+                        <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/jG_bFgVqB" width="100%"
+                            height="600"></iframe>
+                        <iframe id="P5JSframe" src="..." width="100%" height="600"></iframe> -->
                     </div>
-                    <h3>Robot hond</h3>
+                    <h3>De P5JS robot opdrachten</h3>
                     <p>Voor het vak opkomende technologieën moesten we een robot maken met behulp van
-                        p5javascript om daar dan later andere oefeningen mee te maken. Mijn robot is hond.
+                        p5javascript om daar dan later oefeningen mee te maken. Mijn robot is hond.
+                        <br>
+                        <b>Oefening 1:</b> Teken je eigen robot met code. Wees creatief, gebruik verschillende vormen,
+                        kleuren,
+                        transparantie,... Stel je eerst een ontwerp voor op papier en probeer het dan te construeren met
+                        code.
+                        <br>
+                        <b>Oefening 2:</b> Teken uw robot in delen die ten opzichte van elkaar kunnen worden geplaatst
+                        met
+                        behulp van variabelen om de morfologie te veranderen. Begin met de x en y positie van je robot.
+                        Kijk vervolgens naar verschillende lichaamsdelen die leuk zouden zijn om te veranderen.
+                        <br>
+                        <b>Oefening 3:</b> Gebruik de translate, rotate, scale with pop en push om uw robot
+                        interactiever te
+                        maken en uw code te optimaliseren. Gebruik input van de muis om je schets interactief te maken.
+                        <br>
+                        <b>Oefening 4:</b> Gebruik extra pixel (jpg, gif, png) om uw uiterlijk te verbeteren. Gebruik
+                        bijvoorbeeld; timers, loops, random (ruis) en/of tweening om wat animaties toe te voegen aan
+                        delen van je robot
                     </p>
                 </div>
             </div>
@@ -247,6 +273,10 @@
                 document.getElementById("modal01").style.display = "block";
                 var captionText = document.getElementById("caption");
                 captionText.innerHTML = element.alt;
+            }
+
+            function myP5JSFunction() {
+                document.querySelector("#myP5JSbar > a:nth-child(1)");
             }
         </script>
     </div>
