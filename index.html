@@ -42,6 +42,11 @@
     <div class="w3-main" style="margin-left:300px">
         <!-- Push down content on small screens -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
+        <div id="home" class="home">
+            <div class="display">
+                <span class="naam">Hallo, ik ben <br> Eline De Roo</span>
+            </div>
+        </div>
         <div class="row">
             <div class="side">
                 <span id="aboutme" class="about"><b>Wie ben ik?</b></span>
@@ -59,8 +64,8 @@
                         Mijn hobby’s zijn voetballen, bakken en reizen. Mijn interesses zijn het maken van websites en
                         apps maar AI en VR vind ik ook heel interessant. Sommige creatieve dingen kan ik ook interessant
                         vinden zoals 3D-geprintte dingen enz. Ik ben een hele grote dierenliefhebber en zelf heb ik
-                        ook veel huisdieren: een kat: <i>Snoetie</i>, een hond: <i>Charlie</i>, 2 kippen, kleine
-                        visvijver met veel vissen en heb ook nog konijnen en kanaries gehad.
+                        ook veel huisdieren: een kat: <i><b>Snoetie</b></i>, een hond: <i><b>Charlie</b></i>, 2 kippen,
+                        kleine visvijver met veel vissen en heb ook nog konijnen en kanaries gehad.
                     </p>
                     <p class="sport">
                         Ik ben ook sportief, wou eigenlijk al van kleinsafaan voetballen maar mocht dit pas 5 jaar
@@ -73,7 +78,7 @@
                         nonkel te bezoeken; Sardinië, Malta, enz. met mijn ouders en mijn zus. Normaal ging ik ook al
                         naar Zuid-Afrika geweest zijn maar dat jaar is Corona uitgebroken dus die reis is helaas niet
                         doorgegaan. Ik zou graag nog veel reizen naar verschillende landen om zo meer culturen en andere
-                        dingen te leren kennen. Neem gerust contact op of bekijk hieronder mijn eerdere werken.
+                        dingen te leren kennen. Neem gerust contact op of bekijk hieronder enkele werken.
                     </p>
                     <a href="CV.pdf" download="CV.pdf">
                         <button class="cv">
@@ -83,36 +88,43 @@
                         </button>
                     </a>
                 </div>
-
             </div>
         </div>
         <div id="portfolio">
             <h2>Portfolio</h2>
             <p id="tekst">
-                Bekijk hier mijn eerdere werken:
+                Bekijk hier enkele werken:
             </p>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('alles')"> Alles</button>
+                <button class="btn" onclick="filterSelection('graphic')"> Graphic Design</button>
+                <button class="btn" onclick="filterSelection('visual')"> Visualisatie Technieken</button>
+                <button class="btn" onclick="filterSelection('robot')"> Opkomende Technologieën</button>
+                <button class="btn" onclick="filterSelection('eigen')"> Eigen projecten</button>
+            </div>
             <div class="row-portfolio">
-                <div class="content">
+                <div class="content columns graphic">
                     <div class="gallerij">
-                        <img src="afbeeldingen/portfolio/mockup1.jpg" alt="Mockup 1" style="width:10%">
-                        <img src="afbeeldingen/portfolio/mockup2.jpg" alt="Mockup 2" style="width:10%">
-                        <img src="afbeeldingen/portfolio/mockup3.jpg" alt="Mockup 3" style="width:10%">
+                        <img src="afbeeldingen/portfolio/mockup1.jpg" alt="Mockup 1" style="height:250px">
+                        <img src="afbeeldingen/portfolio/mockup2.jpg" alt="Mockup 2" style="height:250px">
+                        <img src="afbeeldingen/portfolio/mockup3.jpg" alt="Mockup 3" style="height:250px">
                     </div>
                     <h3>Ontwerpdossier</h3>
                     <p>Voor het vak Graphic Design hadden we de opdracht gekregen om een ontwerpdossier te maken
                         over een product en hiervan moest je ook drie mockup's maken.</p>
                 </div>
 
-                <div class="content">
+                <div class="content columns visual">
                     <div class="gallerij">
                         <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="Render met deel in wireframe"
-                            style="width:10%">
+                            style="height:250px">
                         <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio"
-                            style="width:10%">
+                            style="height:250px">
+                        <br>
                         <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail"
-                            style="width:10%">
+                            style="height:250px">
                         <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context"
-                            style="width:10%">
+                            style="height:250px">
                     </div>
                     <h3>Render opdracht</h3>
                     <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
@@ -121,14 +133,14 @@
                         ziet, 1 render in een studio en 1 render die een wireframe heeft.</p>
                 </div>
 
-                <div class="content">
+                <div class="content columns visual">
                     <div class="gallerij">
                         <img src="afbeeldingen/portfolio/cornell_box_deroo_eline.jpg" alt="Cornell box 1"
-                            style="width:10%">
+                            style="height:250px">
                         <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_2.jpg" alt="Cornell box 2"
-                            style="width:10%">
+                            style="height:250px">
                         <img src="afbeeldingen/portfolio/cornell_box_deroo_eline_4.jpg" alt="Cornell box 3"
-                            style="width:10%">
+                            style="height:250px">
                     </div>
                     <h3>Cornell box</h3>
                     <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
@@ -136,16 +148,17 @@
                         refractie, minstens 1 met een bump map en 1 element met een projection map zijn.</p>
                 </div>
 
-                <div class="content">
+                <div class="content columns visual">
                     <div class="gallerij">
                         <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="Foto in context"
-                            style="width:10%">
+                            style="height:250px">
                         <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg" alt="Foto in basic infini"
-                            style="width:10%">
+                            style="height:250px">
+                        <br>
                         <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
-                            alt="Foto met hand in basic infini" style="width:10%">
+                            alt="Foto met hand in basic infini" style="height:250px">
                         <img src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg" alt="Foto met lichtspoor"
-                            style="width:10%">
+                            style="height:250px">
                     </div>
                     <h3>Foto opdracht</h3>
                     <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
@@ -154,17 +167,21 @@
                         waarbij op 1 foto een relevant lichaamsdeel zichtbaar moest zijn.</p>
                 </div>
 
-                <div class="content">
+                <div class="content columns eigen">
                     <div class="gallerij">
-                        <img src="afbeeldingen/naam1.jpg" alt="Naam vooraanzicht" style="width:10%">
-                        <img src="afbeeldingen/naam2.jpg" alt="Naam schuin aanzicht" style="width:10%">
+                        <img src="afbeeldingen/naam1.jpg" alt="Naam vooraanzicht" style="height:250px">
+                        <img src="afbeeldingen/naam2.jpg" alt="Naam schuin aanzicht" style="height:250px">
                     </div>
-                    <h3>Mijn naam in kalksteen gekerft</h3>
-                    <p>Dit heb ik samen met mijn meter gedaan. Mijn meter is iemand die zich veel bezig
-                        houdt met kunst met stenen.</p>
+                    <h3>Mijn naam in kalksteen </h3>
+                    <p>
+                        Dit heb ik samen met mijn meter en mijn neef gedaan in de zomer een paar jaar geleden. Hierbij
+                        heeft mijn meter mijn naam op de kalksteen geschreven. Daarna heeft ze uitgelegd wat we moesten
+                        doen en dan hebben mijn neef en ik elk onze naam uitgekerft met soms nog eens hulp van onze
+                        meter.
+                    </p>
                 </div>
 
-                <div class="content">
+                <div class="content columns robot">
                     <div class="gallerij">
                         <div class="navbarP5JS" id="myP5JSbar">
                             <a href="javascript:void(0);" onclick="myP5JSFunction('2r4RUifkc')">Oefening 1</a>
@@ -182,7 +199,7 @@
                     </div>
                     <h3>De P5JS robot opdrachten</h3>
                     <p>Voor het vak opkomende technologieën moesten we een robot maken met behulp van
-                        p5javascript om daar dan later oefeningen mee te maken. Mijn robot is hond.
+                        p5javascript om daar dan later oefeningen mee te maken.
                         <br>
                         <b>Oefening 1:</b> Teken je eigen robot met code. Wees creatief, gebruik verschillende vormen,
                         kleuren,
@@ -205,6 +222,52 @@
                 </div>
             </div>
         </div>
+        <script>
+            filterSelection("alles") // Execute the function and show all columns
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("columns");
+                if (c == "alles") c = "";
+                // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+                for (i = 0; i < x.length; i++) {
+                    RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+                }
+            }
+            // Show filtered elements
+            function AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                        element.className += " " + arr2[i];
+                    }
+                }
+            }
+            // Hide elements that are not selected
+            function RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
         <div class="container">
             <h2 id="contactme">Contact</h2>
             <p id="tekst">
