@@ -19,8 +19,9 @@
 
 <body>
     <!-- lay-out nog klein beetje bewerken -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <nav class="w3-sidebar w3-bar-block w3-animate-left w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold;background-color:darkgrey;color: darkslategrey;" id="mySidebar">
+        <br>
         <h3 class="w3-padding-64 w3-center"><b>Portfolio<br>Website</b></h3>
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
@@ -94,7 +95,7 @@
         </div>
         <!-- lay-out nog klein beetje bewerken -->
         <div id="portfolio">
-            <h2>Portfolio</h2>
+            <span class="port"><b>Portfolio</b></span>
             <p id="tekst">
                 Bekijk hier enkele werken:
             </p>
@@ -113,21 +114,23 @@
                         <img src="afbeeldingen/portfolio/mockup3.jpg" alt="Mockup 3" style="height:250px">
                     </div>
                     <h3>Ontwerpdossier</h3>
-                    <p>Voor het vak Graphic Design hadden we de opdracht gekregen om een ontwerpdossier te maken
-                        over een product en hiervan moest je ook drie mockup's maken.</p>
+                    <p>
+                        Voor het vak Graphic Design hadden we de opdracht gekregen om een industrieel ontwerpportfolio
+                        te maken over een project, wat een geweldig hulpmiddel is om het werk van een industrieel
+                        ontwerper te visualiseren en meer communicatieve vaardigheden te ontwikkelen om een boodschap
+                        over te brengen en contact te maken met een publiek. Ik was verantwoordelijk voor het bedenken,
+                        prototypen en verfijnen van dit ontwerp om aan de behoeften en voorkeuren van de doelgroep te
+                        voldoen.
+                    </p>
                 </div>
 
                 <div class="content columns visual">
                     <div class="gallerij">
-                        <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="Render met deel in wireframe"
-                            style="height:250px">
-                        <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio"
-                            style="height:250px">
+                        <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="Render met deel in wireframe">
+                        <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio">
                         <br>
-                        <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail"
-                            style="height:250px">
-                        <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context"
-                            style="height:250px">
+                        <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail">
+                        <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context">
                     </div>
                     <h3>Render opdracht</h3>
                     <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
@@ -147,7 +150,7 @@
                     </div>
                     <h3>Cornell box</h3>
                     <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
-                        we een Cornell box maken. Binnen de Cornell box moet er 1 object met reflectie, 1 met
+                        we een Cornell box maken. Binnen de Cornell box moest er 1 object met reflectie, 1 met
                         refractie, minstens 1 met een bump map en 1 element met een projection map zijn.</p>
                 </div>
 
@@ -183,7 +186,7 @@
                         meter.
                     </p>
                 </div>
-
+                <!-- probleem: kan maar alleen oefening 1 zien -->
                 <div class="content columns robot">
                     <div class="gallerij">
                         <div class="navbarP5JS" id="myP5JSbar">
@@ -272,7 +275,7 @@
             }
         </script>
         <div class="container">
-            <h2 id="contactme">Contact</h2>
+            <span id="contactme"><b>Contact</b></span>
             <p id="tekst">
                 Laten we contact opnemen. Stuur mij een bericht:
             </p>
@@ -290,7 +293,7 @@
                         <i class="fa fa-envelope"></i>
                         Email: elinerootje@gmail.com
                     </p>
-                    <!--Idee: via google plugin => google maps naar adres-->
+                    <!--Idee: google maps plugin -->
                     <img id="ursel" src="afbeeldingen/ursel.jpg" alt="ursel">
                 </div>
                 <div class="col">
