@@ -23,7 +23,7 @@
         style="z-index:3;width:300px;font-weight:bold;background-color:white;color: grey;" id="mySidebar">
         <br>
         <img src="afbeeldingen/logo.jpg" alt="logo" id="logo">
-        <h3 class="w3-padding-32 w3-center"><b>Portfolio<br>Website</b></h3>
+        <!-- <h3 class="w3-padding-32 w3-center"><b>Portfolio<br>Website</b></h3> -->
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
         <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
@@ -127,11 +127,14 @@
 
                 <div class="content columns visual">
                     <div class="gallerij">
-                        <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="Render met deel in wireframe">
-                        <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio">
-                        <br>
-                        <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail">
-                        <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context">
+                        <img src="afbeeldingen/portfolio/deroo_eline_wire.jpg" alt="Render met deel in wireframe"
+                            style="height:200px">
+                        <img src="afbeeldingen/portfolio/deroo_eline_studio.jpg" alt="Render in fotostudio"
+                            style="height:200px">
+                        <img src="afbeeldingen/portfolio/deroo_eline_detail.jpg" alt="Render in detail"
+                            style="height:200px">
+                        <img src="afbeeldingen/portfolio/deroo_eline_context.jpg" alt="Render in context"
+                            style="height:200px">
                     </div>
                     <h3>Render opdracht</h3>
                     <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
@@ -158,14 +161,13 @@
                 <div class="content columns visual">
                     <div class="gallerij">
                         <img src="afbeeldingen/portfolio/deroo_eline_03_1-20_4.jpg" alt="Foto in context"
-                            style="height:250px">
+                            style="height:180px">
                         <img src="afbeeldingen/portfolio/deroo_eline_01_2,5sec_10.jpg" alt="Foto in basic infini"
-                            style="height:250px">
-                        <br>
+                            style="height:180px">
                         <img src="afbeeldingen/portfolio/deroo_eline_02_1-10_5,6.JPG"
-                            alt="Foto met hand in basic infini" style="height:250px">
+                            alt="Foto met hand in basic infini" style="height:180px">
                         <img src="afbeeldingen/portfolio/deroo_eline_04_25sec_7,1.jpg" alt="Foto met lichtspoor"
-                            style="height:250px">
+                            style="height:180px">
                     </div>
                     <h3>Foto opdracht</h3>
                     <p>Voor het vak grafische ontwerpcommunicatie het deel visualisatie technieken moesten
@@ -191,36 +193,39 @@
                 <div class="content columns robot">
                     <div class="gallerij">
                         <div class="navbarP5JS" id="myP5JSbar">
-                            <a href="javascript:void(0);" onclick="myP5JSFunction('2r4RUifkc')">Oefening 1</a>
-                            <a href="javascript:void(0);" onclick="myP5JSFunction('U2-njzGSV')">Oefening 2</a>
-                            <a href="javascript:void(0);" onclick="myP5JSFunction('jG_bFgVqB')">Oefening 3</a>
-                            <a href="javascript:void(0);" onclick="myP5JSFunction('...')">Oefening 4</a>
+                            <button class="btn-oef" onclick="myP5JSFunction('2r4RUifkc')">Oefening 1</button>
+                            <button class="btn-oef" onclick="myP5JSFunction('U2-njzGSV')">Oefening 2</button>
+                            <button class="btn-oef" onclick="myP5JSFunction('jG_bFgVqB')">Oefening 3</button>
+                            <button class="btn-oef" onclick="myP5JSFunction('...')">Oefening 4</button>
                         </div>
                         <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/2r4RUifkc" width="100%"
-                            height="600"></iframe>
+                            height="500"></iframe>
                         <!-- <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/U2-njzGSV" width="100%"
-                            height="600"></iframe>
+                            height="500"></iframe>
                         <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/jG_bFgVqB" width="100%"
-                            height="600"></iframe>
+                            height="500"></iframe>
                         <iframe id="P5JSframe" src="..." width="100%" height="600"></iframe> -->
+                        <script>
+                            function myP5JSFunction() {
+                                document.querySelector("#myP5JSbar > button:nth-child(1)");
+                            }
+                        </script>
                     </div>
                     <h3>De P5JS robot opdrachten</h3>
                     <p>Voor het vak opkomende technologieën moesten we een robot maken met behulp van
                         p5javascript om daar dan later oefeningen mee te maken.
                         <br>
                         <b>Oefening 1:</b> Teken je eigen robot met code. Wees creatief, gebruik verschillende vormen,
-                        kleuren,
-                        transparantie,... Stel je eerst een ontwerp voor op papier en probeer het dan te construeren met
-                        code.
+                        kleuren, transparantie,... Stel je eerst een ontwerp voor op papier en probeer het dan te
+                        construeren met code.
                         <br>
                         <b>Oefening 2:</b> Teken uw robot in delen die ten opzichte van elkaar kunnen worden geplaatst
-                        met
-                        behulp van variabelen om de morfologie te veranderen. Begin met de x en y positie van je robot.
-                        Kijk vervolgens naar verschillende lichaamsdelen die leuk zouden zijn om te veranderen.
+                        met behulp van variabelen om de morfologie te veranderen. Begin met de x en y positie van je
+                        robot. Kijk vervolgens naar verschillende lichaamsdelen die leuk zouden zijn om te veranderen.
                         <br>
                         <b>Oefening 3:</b> Gebruik de translate, rotate, scale with pop en push om uw robot
-                        interactiever te
-                        maken en uw code te optimaliseren. Gebruik input van de muis om je schets interactief te maken.
+                        interactiever te maken en uw code te optimaliseren. Gebruik input van de muis om je schets
+                        interactief te maken.
                         <br>
                         <b>Oefening 4:</b> Gebruik extra pixel (jpg, gif, png) om uw uiterlijk te verbeteren. Gebruik
                         bijvoorbeeld; timers, loops, random (ruis) en/of tweening om wat animaties toe te voegen aan
@@ -232,7 +237,7 @@
         <script>
             filterSelection("alles") // Execute the function and show all columns
             function filterSelection(c) {
-                var x, i;
+                let x, i;
                 x = document.getElementsByClassName("columns");
                 if (c == "alles") c = "";
                 // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
@@ -243,7 +248,7 @@
             }
             // Show filtered elements
             function AddClass(element, name) {
-                var i, arr1, arr2;
+                let i, arr1, arr2;
                 arr1 = element.className.split(" ");
                 arr2 = name.split(" ");
                 for (i = 0; i < arr2.length; i++) {
@@ -254,7 +259,7 @@
             }
             // Hide elements that are not selected
             function RemoveClass(element, name) {
-                var i, arr1, arr2;
+                let i, arr1, arr2;
                 arr1 = element.className.split(" ");
                 arr2 = name.split(" ");
                 for (i = 0; i < arr2.length; i++) {
@@ -265,11 +270,11 @@
                 element.className = arr1.join(" ");
             }
             // Add active class to the current button (highlight it)
-            var btnContainer = document.getElementById("myBtnContainer");
-            var btns = btnContainer.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
+            let btnContainer = document.getElementById("myBtnContainer");
+            let btns = btnContainer.getElementsByClassName("btn");
+            for (let i = 0; i < btns.length; i++) {
                 btns[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("active");
+                    let current = document.getElementsByClassName("active");
                     current[0].className = current[0].className.replace(" active", "");
                     this.className += " active";
                 });
@@ -300,16 +305,16 @@
                 <div class="col">
                     <form action="mailto:eline.deroo@ugent.be" method="post">
                         <label for="naam">Naam</label>
-                        <input type="text" id="naam" name="naam" placeholder="Jouw naam.." required>
+                        <input type="text" id="naam" name="naam" placeholder="Jouw naam..." required>
 
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Jouw email.." required>
+                        <input type="text" id="email" name="email" placeholder="Jouw email..." required>
 
                         <label for="onderwerp">Onderwerp</label>
-                        <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp.." required>
+                        <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp..." required>
 
                         <label for="bericht">Bericht</label>
-                        <textarea id="bericht" name="bericht" placeholder="Schrijf iets.." style="height:200px"
+                        <textarea id="bericht" name="bericht" placeholder="Schrijf iets..." style="height:200px"
                             required></textarea>
 
                         <input type="submit" value="Verzenden">
@@ -343,10 +348,6 @@
                 document.getElementById("modal01").style.display = "block";
                 var captionText = document.getElementById("caption");
                 captionText.innerHTML = element.alt;
-            }
-
-            function myP5JSFunction() {
-                document.querySelector("#myP5JSbar > a:nth-child(1)");
             }
         </script>
     </div>
