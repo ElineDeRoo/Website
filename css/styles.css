@@ -151,7 +151,7 @@ iframe {
 /* contact */
 #contactme {
   padding-left: 41%;
-  background-color: #f1f1f1;
+  background-color: lightgrey;
   margin-bottom: 0px;
   letter-spacing: 6px;
   font-size: 32px;
@@ -213,7 +213,7 @@ form input[type="submit"]:hover {
 }
 
 .container {
-  background-color: #f1f1f1;
+  background-color: lightgrey;
   padding: 10px;
 }
 
