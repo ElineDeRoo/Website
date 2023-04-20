@@ -1,13 +1,13 @@
 #portfolio {
     padding: 10px;
-    background-color: #969696;
+    background-color: #616161;
 }
 
-h2 {
-    word-break: break-all;
-    text-align: center;
-    margin-bottom: 0px;
-    font-size: xx-large;
+.port {
+    padding-left: 41%;
+    letter-spacing: 6px;
+    font-size: 32px;
+    color: gold;
 }
 
 .row-portfolio {
@@ -33,7 +33,7 @@ h2 {
 .content {
     background-color: white;
     width: auto;
-    margin: 30px;
+    margin: 15px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
@@ -61,7 +61,7 @@ h2 {
 }
 
 .btn.active {
-    background-color: #666;
+    background-color: black;
     color: white;
 }
 
@@ -70,10 +70,32 @@ h2 {
     text-align: center;
 }
 
-.gallerij img {
-    width: auto;
-    height: 250px;
-    display: inline-block;
+.btn-oef {
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.btn-oef:active {
+    background-color: gold;
+    color: black;
+}
+
+iframe {
+    overflow-clip-margin: content-box !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    overflow: clip !important;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

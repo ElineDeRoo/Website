@@ -15,12 +15,12 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  margin-top: 30px;
+  margin: 30px;
 }
 
 /* home */
 .home {
-  background-color: aquamarine;
+  background-color: #616161;
   position: relative;
   height: 800px;
   margin: 0 auto;
@@ -80,6 +80,7 @@ body {
 .about {
   letter-spacing: 6px;
   font-size: 32px;
+  color: gold;
 }
 
 .cv p {
@@ -105,61 +106,20 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
-.port {
-  padding-left: 41%;
-  letter-spacing: 6px;
-  font-size: 32px;
-}
-
-/* P5JS assignment */
-.navbarP5JS {
-  overflow: hidden;
-  background-color: #494949;
-  width: 100%;
-}
-
-.navbarP5JS a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.navbarP5JS a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Change color on active */
-.navbarP5JS a:active {
-  background-color: rgb(92, 138, 245);
-  color: black;
-}
-
-iframe {
-  overflow-clip-margin: content-box !important;
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial;
-  overflow: clip !important;
-}
-
 /* contact */
 #contactme {
   padding-left: 41%;
-  background-color: lightgrey;
+  background-color: #616161;
   margin-bottom: 0px;
   letter-spacing: 6px;
   font-size: 32px;
+  color: gold;
 }
 
 .gegevens p {
   padding-left: 25%;
   font-size: large;
+  color: white;
 }
 
 #ursel {
@@ -169,6 +129,7 @@ iframe {
 
 #tekst {
   text-align: center;
+  color: white;
 }
 
 form {
@@ -181,6 +142,7 @@ form label {
   display: block;
   margin-bottom: 10px;
   font-size: 18px;
+  color: white;
 }
 
 form input,
@@ -199,21 +161,24 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #333;
+  background-color: black;
   color: #fff;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
 }
 
 form input[type="submit"]:hover {
-  background-color: #666;
+  background-color: #333;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .container {
-  background-color: lightgrey;
+  background-color: #616161;
   padding: 10px;
 }
 
@@ -224,7 +189,7 @@ form input[type="submit"]:hover {
 
 /* footer */
 .footer {
-  background-color: black;
+  background-color: #616161;
   padding: 10px;
   height: 100px;
   text-align: center;
