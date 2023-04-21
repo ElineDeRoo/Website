@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/style_portfolio.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <script src="javascript_navbar.js"></script>
     <script src="javascript_portfolio.js"></script>
-    <script src="javascript_gallerij.js"></script>
-    <script src="javascript_slideshow.js"></script>
     <link rel="icon" type="image/x-icon" href="afbeeldingen/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,7 +17,7 @@
 <body>
     <!-- achtergrond nog bewerken -->
     <nav class="w3-sidebar w3-bar-block w3-animate-left w3-collapse w3-top w3-center"
-        style="z-index:3;width:300px;font-weight:bold;background-color:white;color: grey;" id="mySidebar">
+        style="z-index:3;width:300px;font-weight:bold;background-color:black;color: gold;" id="mySidebar">
         <br>
         <img src="afbeeldingen/logo.jpg" alt="logo" id="logo">
         <!-- <h3 class="w3-padding-32 w3-center"><b>Portfolio<br>Website</b></h3> -->
@@ -33,9 +30,10 @@
     </nav>
 
     <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">Portfolio Website</span>
-        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
+    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-16"
+        style="background-color:black;color: gold;">
+        <a href="javascript:void(0)" class="w3-right w3-button" style="border-radius: 5px;border: 2px solid #616161;"
+            onclick="w3_open()">&#9776;</a>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -193,21 +191,19 @@
                 <div class="content columns robot">
                     <div class="gallerij">
                         <div class="navbarP5JS" id="myP5JSbar">
-                            <button class="btn-oef" onclick="myP5JSFunction('2r4RUifkc')">Oefening 1</button>
-                            <button class="btn-oef" onclick="myP5JSFunction('U2-njzGSV')">Oefening 2</button>
-                            <button class="btn-oef" onclick="myP5JSFunction('jG_bFgVqB')">Oefening 3</button>
-                            <button class="btn-oef" onclick="myP5JSFunction('...')">Oefening 4</button>
+                            <a class="btn-oef" href="javascript:void(0);" onclick="myP5JSFunction('2r4RUifkc')">Oefening
+                                1</a>
+                            <a class="btn-oef" href="javascript:void(0);" onclick="myP5JSFunction('U2-njzGSV')">Oefening
+                                2</a>
+                            <a class="btn-oef" href="javascript:void(0);" onclick="myP5JSFunction('SCnCEsjIX')">Oefening
+                                3</a>
+                            <a class="btn-oef" href="javascript:void(0);" onclick="myP5JSFunction('...')">Oefening 4</a>
                         </div>
                         <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/2r4RUifkc" width="100%"
                             height="500"></iframe>
-                        <!-- <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/U2-njzGSV" width="100%"
-                            height="500"></iframe>
-                        <iframe id="P5JSframe" src="https://editor.p5js.org/ElineDeRoo/full/jG_bFgVqB" width="100%"
-                            height="500"></iframe>
-                        <iframe id="P5JSframe" src="..." width="100%" height="600"></iframe> -->
                         <script>
-                            function myP5JSFunction() {
-                                document.querySelector("#myP5JSbar > button:nth-child(1)");
+                            function myP5JSFunction(Exercise) {
+                                document.getElementById("P5JSframe").src = "https://editor.p5js.org/ElineDeRoo/full/" + Exercise;
                             }
                         </script>
                     </div>
@@ -299,8 +295,11 @@
                         <i class="fa fa-envelope"></i>
                         Email: elinerootje@gmail.com
                     </p>
-                    <!--Idee: google maps plugin -->
-                    <img id="ursel" src="afbeeldingen/ursel.jpg" alt="ursel">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38912.2891115349!2d3.443687296800886!3d51.13170771271796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c367df4cde706b%3A0xb6f76bbd17f3a14b!2sUrsel%2C%209910%20Aalter!5e1!3m2!1snl!2sbe!4v1682061129847!5m2!1snl!2sbe"
+                        style="border:0;padding-left: 50px;padding-top:30px;" height="350" width="550" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" id="ursel">
+                    </iframe>
                 </div>
                 <div class="col">
                     <form action="mailto:eline.deroo@ugent.be" method="post">

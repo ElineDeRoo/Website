@@ -40,10 +40,10 @@ body {
 
 .naam {
   letter-spacing: 10px;
-  color: white;
+  color: gold;
   font-size: 36px;
   padding: 12px 24px;
-  background-color: #292828;
+  background-color: black;
   animation: opac 0.8s;
   border-radius: 5px;
   display: block;
@@ -122,11 +122,6 @@ body {
   color: white;
 }
 
-#ursel {
-  height: 280px;
-  padding-left: 50px;
-}
-
 #tekst {
   text-align: center;
   color: white;
@@ -135,7 +130,7 @@ body {
 form {
   margin: 0 auto;
   display: block;
-  padding-left: 80px
+  padding-left: 100px
 }
 
 form label {
@@ -223,7 +218,27 @@ form input[type="submit"]:hover {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 900px) {}
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 600px) {
+  .row {
+    display: block;
+  }
+
+  .container-foto {
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .bio {
+    padding-left: 40px;
+    text-align: center;
+  }
+
+  .about {
+    padding-left: 120px;
+    text-align: center;
+  }
+
+}
