@@ -70,6 +70,36 @@
     text-align: center;
 }
 
+.graphic img {
+    display: inline;
+    height: 250px;
+    width: auto;
+}
+
+.box img {
+    display: inline;
+    height: 250px;
+    width: auto;
+}
+
+.naam-steen img {
+    display: inline;
+    height: 250px;
+    width: auto;
+}
+
+.render img {
+    display: inline;
+    height: 200px;
+    width: auto;
+}
+
+.foto img {
+    display: inline;
+    height: 180px;
+    width: auto;
+}
+
 .btn-oef {
     background-color: black;
     border: none;
@@ -113,5 +143,35 @@ iframe {
 
     .port {
         padding-left: 170px;
+    }
+
+    .graphic img {
+        display: block;
+        height: auto;
+        width: 150px;
+    }
+
+    .box img {
+        display: block;
+        height: auto;
+        width: 150px;
+    }
+
+    .naam-steen img {
+        display: block;
+        height: auto;
+        width: 150px;
+    }
+
+    .render img {
+        display: block;
+        height: auto;
+        width: 150px;
+    }
+
+    .foto img {
+        display: block;
+        height: auto;
+        width: 150px;
     }
 }
