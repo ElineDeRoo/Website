@@ -159,7 +159,6 @@ form textarea {
 }
 
 form textarea {
-  width: 500px;
   height: 150px;
 }
 
@@ -262,6 +261,20 @@ form input[type="submit"]:hover {
   #ursel {
     width: 350px;
     height: 250px;
-    padding-left: 10px;
+    padding-left: 15px;
+  }
+
+  form {
+    display: block;
+    padding-left: 15px
+  }
+
+  form input,
+  form textarea {
+    width: 300px;
+  }
+
+  form textarea {
+    height: 100px;
   }
 }
