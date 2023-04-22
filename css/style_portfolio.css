@@ -149,8 +149,8 @@ iframe {
     .graphic img {
         display: block;
         height: auto;
-        width: 150px;
-        margin-left: 50px;
+        width: 200px;
+        margin-left: 100px;
     }
 
     .box img {
@@ -163,21 +163,21 @@ iframe {
     .naam-steen img {
         display: block;
         height: auto;
-        width: 150px;
-        margin-left: 50px;
+        width: 200px;
+        margin-left: 100px;
     }
 
     .render img {
         display: block;
         height: auto;
-        width: 150px;
-        margin-left: 50px;
+        width: 200px;
+        margin-left: 100px;
     }
 
     .foto img {
         display: block;
         height: auto;
-        width: 150px;
-        margin-left: 50px;
+        width: 200px;
+        margin-left: 100px;
     }
 }

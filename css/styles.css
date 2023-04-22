@@ -233,6 +233,10 @@ form input[type="submit"]:hover {
     display: block;
   }
 
+  .side {
+    padding: 10px;
+  }
+
   .container-foto {
     padding-left: 30px;
     margin-bottom: 40px;
@@ -249,7 +253,7 @@ form input[type="submit"]:hover {
   }
 
   .about {
-    padding-left: 40px;
+    padding-left: 45px;
     text-align: center;
   }
 
@@ -264,9 +268,13 @@ form input[type="submit"]:hover {
     padding-left: 15px;
   }
 
+  .gegevens p {
+    padding-left: 80px;
+  }
+
   form {
     display: block;
-    padding-left: 15px
+    padding-left: 25px
   }
 
   form input,
