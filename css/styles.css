@@ -138,7 +138,7 @@ body {
 form {
   margin: 0 auto;
   display: block;
-  padding-left: 100px
+  padding-left: 180px
 }
 
 form label {
@@ -235,7 +235,7 @@ form input[type="submit"]:hover {
   }
 
   .container-foto {
-    padding-left: 40px;
+    padding-left: 30px;
     margin-bottom: 40px;
   }
 
@@ -249,18 +249,18 @@ form input[type="submit"]:hover {
   }
 
   .about {
-    padding-left: 80px;
+    padding-left: 50px;
     text-align: center;
   }
 
   #contactme {
-    padding-left: 80px;
+    padding-left: 100px;
     text-align: center;
   }
 
   #ursel {
-    width: 150px;
-    height: 75px;
+    width: 350px;
+    height: 175px;
     padding-left: 10px;
   }
 }

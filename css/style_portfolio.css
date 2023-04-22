@@ -138,40 +138,46 @@ iframe {
     }
 
     .btn {
+        display: block;
         margin: 5px;
     }
 
     .port {
-        padding-left: 170px;
+        padding-left: 120px;
     }
 
     .graphic img {
         display: block;
         height: auto;
         width: 150px;
+        padding-left: 25%;
     }
 
     .box img {
         display: block;
         height: auto;
         width: 150px;
+        padding-left: 25%;
     }
 
     .naam-steen img {
         display: block;
         height: auto;
         width: 150px;
+        padding-left: 25%;
     }
 
     .render img {
         display: block;
         height: auto;
         width: 150px;
+        padding-left: 25%;
     }
 
     .foto img {
         display: block;
         height: auto;
         width: 150px;
+        padding-left: 25%;
     }
 }
