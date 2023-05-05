@@ -21,6 +21,10 @@ body {
 /* home */
 .home {
   background-color: #616161;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
   position: relative;
   height: 800px;
   margin: 0 auto;
@@ -30,6 +34,16 @@ body {
   overflow: hidden;
   text-align: center;
 }
+
+/* 
+.bg-img {
+  background-image: url('/afbeeldingen/');
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  opacity: 0.5;
+} */
 
 .display {
   position: absolute;
