@@ -1,8 +1,13 @@
 <!DOCTYPE html>
+<!-- definieert dat document HTML5 is -->
 <html lang="en">
+<!-- <html> element is hoofdelement van HTML-pagina -->
+<!-- lang attribute van <html> element = taal van web pagina
+    moet in mijn geval eigenlijk "nl-BE" zijn ipv "en" -->
 
 <head>
     <title>Portfoliowebsite</title>
+    <!-- <title> element geeft titel op voor HTML-pagina (weergegeven in titelbalk van browser of op tabblad van pagina) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
@@ -10,9 +15,13 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="javascript_portfolio.js"></script>
+    <!-- <script> element mag verwijdert worden heeft geen functie meer binnen pagin want heb niet verder gewerkt met dit idee -->
     <link rel="icon" type="image/x-icon" href="afbeeldingen/logo.ico">
+    <!-- lijn 17: icon naast title op tabblad of titelbalk van browser -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link> element linkt documenten of websites met HTML-pagina -->
 </head>
+<!-- <head> element bevat meta-info over HTML-pagina -->
 
 <body>
     <nav class="w3-sidebar w3-bar-block w3-animate-left w3-collapse w3-top w3-center"
@@ -27,6 +36,7 @@
         <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
         <a href="#contactme" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
+    <!-- navigatie menu van website -->
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-16"
@@ -42,13 +52,13 @@
     <div class="w3-main" style="margin-left:300px">
         <!-- Push down content on small screens -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
-        <!-- Idee home: animatie tekst/ foto's op achtergrond of iets anders -->
+        <!-- Home page: deel van website dat je als eerste zit als je het opent -->
         <div id="home" class="home">
-            <!-- <img src="afbeeldingen/" class="bg-img"> -->
             <div class="display">
                 <span class="naam">Hallo, ik ben <br> Eline De Roo</span>
             </div>
         </div>
+
         <div class="row">
             <div class="side">
                 <span id="aboutme" class="about"><b>Wie ben ik?</b></span>
@@ -345,5 +355,6 @@
         </script>
     </div>
 </body>
+<!-- <body> element definieert hoofdtekst van document en is container voor alle zichtbare inhoud -->
 
 </html>

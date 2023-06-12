@@ -23,10 +23,6 @@ body {
   background-color: #616161;
   background-image: linear-gradient(45deg, white 30%, transparent 30%);
   background-size: 80px 80px;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
   position: relative;
   height: 800px;
   margin: 0 auto;
@@ -36,16 +32,6 @@ body {
   overflow: hidden;
   text-align: center;
 }
-
-/* 
-.bg-img {
-  background-image: url('/afbeeldingen/');
-  height: 800px;
-  width: 100%;
-  object-fit: cover;
-  vertical-align: bottom;
-  opacity: 0.5;
-} */
 
 .display {
   position: absolute;
@@ -240,6 +226,7 @@ form input[type="submit"]:hover {
   opacity: 0.60;
 }
 
+/* lijn 231 niet toegepast: aanpassing als uw maximale scherm breedte 900 px is */
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {}
 

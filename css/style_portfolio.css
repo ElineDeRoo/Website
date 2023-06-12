@@ -129,6 +129,7 @@ iframe {
     overflow: clip !important;
 }
 
+/* lijn 134 niet toegepast: aanpassing als uw maximale scherm breedte 900 px is */
 /* Responsive layout*/
 @media screen and (max-width: 900px) {}
 
