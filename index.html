@@ -10,6 +10,10 @@
     <!-- <title> element geeft titel op voor HTML-pagina (weergegeven in titelbalk van browser of op tabblad van pagina) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- De viewport is het zichtbare gebied van een webpagina voor de gebruiker + varieert met het apparaat en zal kleiner zijn op een mobiele telefoon dan op een computerscherm
+    Het width=device-width gedeelte stelt de breedte van de pagina in om de schermbreedte van het apparaat te volgen (die zal variëren afhankelijk van het apparaat)
+    Het deel initial-scale=1.0 stelt het initiële zoomniveau in wanneer de pagina voor het eerst door de browser wordt geladen -->
+    <!-- lijn 17-20 link externe stijl bestanden met HTML-pagina -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style_portfolio.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,18 +21,20 @@
     <script src="javascript_portfolio.js"></script>
     <!-- <script> element mag verwijdert worden heeft geen functie meer binnen pagin want heb niet verder gewerkt met dit idee -->
     <link rel="icon" type="image/x-icon" href="afbeeldingen/logo.ico">
-    <!-- lijn 17: icon naast title op tabblad of titelbalk van browser -->
+    <!-- lijn 23: icon naast title op tabblad of titelbalk van browser -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link> element linkt documenten of websites met HTML-pagina -->
 </head>
 <!-- <head> element bevat meta-info over HTML-pagina -->
 
 <body>
+    <!-- navigatie menu van website -->
     <nav class="w3-sidebar w3-bar-block w3-animate-left w3-collapse w3-top w3-center"
         style="z-index:3;width:300px;font-weight:bold;background-color:black;color: gold;" id="mySidebar">
         <br>
         <img src="afbeeldingen/logo.jpg" alt="logo" id="logo">
         <!-- <h3 class="w3-padding-32 w3-center"><b>Portfolio<br>Website</b></h3> -->
+        <!-- lijn 38 zorgt er voor dat ik mijn navigatie menu kan toeklappen -->
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
         <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
@@ -36,11 +42,12 @@
         <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
         <a href="#contactme" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
-    <!-- navigatie menu van website -->
+
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-16"
         style="background-color:black;color: gold;">
+        <!-- lijn 51 zorgt er voor dat ik mijn navigatie menu kan openklappen -->
         <a href="javascript:void(0)" class="w3-right w3-button" style="border-radius: 5px;border: 2px solid #616161;"
             onclick="w3_open()">&#9776;</a>
     </header>
@@ -66,25 +73,25 @@
                     <img id="photome" src="afbeeldingen/foto van mezelf.jpg" alt="Foto van mezelf">
                 </div>
                 <div class="bio">
-                    <p class="school">
+                    <p>
                         Ik ben Eline De Roo en ben 19 jaar. Ik ben een student die Industrieel Ingenieur Industrieel
                         Ontwerpen aan de universiteit Gent campus Kortrijk studeert. Vooraleer ik studeerde aan de
                         universiteit heb ik eerst twee jaar moderne wetenschappen in Zomergem gevolgd. Hierna heb ik
                         vier jaar Industriële wetenschappen in Sint-Denijs-Westrem gevolgd.
                     </p>
-                    <p class="interesse">
+                    <p>
                         Mijn hobby’s zijn voetballen, bakken en reizen. Mijn interesses zijn het maken van websites en
                         apps maar AI en VR vind ik ook heel interessant. Sommige creatieve dingen kan ik ook interessant
                         vinden zoals 3D-geprintte dingen enz. Ik ben een hele grote dierenliefhebber en zelf heb ik
                         ook veel huisdieren: een kat: <i><b>Snoetie</b></i>, een hond: <i><b>Charlie</b></i>, 2 kippen,
                         kleine visvijver met veel vissen en heb ook nog konijnen en kanaries gehad.
                     </p>
-                    <p class="sport">
+                    <p>
                         Ik ben ook sportief, wou eigenlijk al van kleinsafaan voetballen maar mocht dit pas 5 jaar
                         geleden doen van mijn moeder. Hiervoor heb ik wel andere sporten gedaan zoals 5 jaar volleybal,
                         2 à 3 jaar tennis en enkele maanden zwemmen.
                     </p>
-                    <p class="reis">
+                    <p>
                         Mijn droom is om zo veel mogelijk landen van de wereld te bezoeken. Enkele toffe
                         reizen die ik al gemaakt heb met mijn familie: Chicago en Beaverdam met mijn meter om mijn
                         nonkel te bezoeken; Sardinië, Malta, enz. met mijn ouders en mijn zus. Normaal ging ik ook al
@@ -102,12 +109,13 @@
                 </div>
             </div>
         </div>
-        <!-- nog enkele projecten toevoegen -->
+        <!-- deel van website waar je enkele projecten ziet -->
         <div id="portfolio">
             <span class="port"><b>Portfolio</b></span>
             <p id="tekst">
                 Bekijk hier enkele werken:
             </p>
+            <!-- lijn 119-125 knoppen om zo de projecten te filteren op basis van de categorieën -->
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('alles')"> Alles</button>
                 <button class="btn" onclick="filterSelection('graphic')"> Graphic Design</button>
@@ -229,8 +237,7 @@
                         wat animaties toe aan je robot.
                         <br>
                         <b>Oefening 5:</b> Maak een kleine game die aan enkele eisen voldaan is. Sommige van deze eisen
-                        zijn:
-                        Wereld, Robot, Vijand, geluidsbestand, beeldbestand, timer, enz.
+                        zijn: Wereld, Robot, Vijand, geluidsbestand, beeldbestand, timer, enz.
                     </p>
                 </div>
             </div>
