@@ -244,18 +244,25 @@
             </div>
         </div>
         <script>
+            // lijn 249: De functie filterSelection(c) wordt gedefinieerd. Deze functie accepteert een parameter c, die de filtercategorie vertegenwoordigt.
             filterSelection("alles") // Execute the function and show all columns
             function filterSelection(c) {
+                // lijn 252: Alle elementen met de class "columns" worden geselecteerd en opgeslagen in de variabele x.
                 let x, i;
                 x = document.getElementsByClassName("columns");
+                // lijn 255: Als de filtercategorie c gelijk is aan "alles", wordt c leeggemaakt.
+                // lijn 257-262: Een lus wordt gebruikt om door alle geselecteerde elementen te itereren.
                 if (c == "alles") c = "";
                 // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
                 for (i = 0; i < x.length; i++) {
+                    // lijn 260: Voor elk element wordt eerst de class "show" verwijderd met behulp van de functie RemoveClass(element, name).
+                    // lijn 261: Als de classnaam van het element de filtercategorie c bevat, wordt de class "show" toegevoegd met behulp van de functie AddClass(element, name).
                     RemoveClass(x[i], "show");
                     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
                 }
             }
             // Show filtered elements
+            // lijn 266-275: De functie AddClass(element, name) wordt gedefinieerd om een classnaam toe te voegen aan een element. Als de classnaam al aanwezig is, wordt deze overgeslagen.
             function AddClass(element, name) {
                 let i, arr1, arr2;
                 arr1 = element.className.split(" ");
@@ -267,6 +274,7 @@
                 }
             }
             // Hide elements that are not selected
+            // lijn 278-288: De functie RemoveClass(element, name) wordt gedefinieerd om een classnaam van een element te verwijderen. Als de classnaam meerdere keren voorkomt, worden alle exemplaren verwijderd.
             function RemoveClass(element, name) {
                 let i, arr1, arr2;
                 arr1 = element.className.split(" ");
@@ -279,6 +287,8 @@
                 element.className = arr1.join(" ");
             }
             // Add active class to the current button (highlight it)
+            // lijn 295: Er wordt een event listener toegevoegd aan alle knoppen met de class "btn" die binnen het element met de id "myBtnContainer" vallen.
+            // lijn 296-299: Wanneer een knop wordt geklikt, wordt de huidige knop met de class "active" geselecteerd en wordt de class "active" ervan verwijderd. Vervolgens wordt de class "active" toegevoegd aan de geklikte knop
             let btnContainer = document.getElementById("myBtnContainer");
             let btns = btnContainer.getElementsByClassName("btn");
             for (let i = 0; i < btns.length; i++) {
